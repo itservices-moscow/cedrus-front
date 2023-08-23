@@ -144,7 +144,8 @@ body{
 	justify-content: center;
 	background: #0C674B;
 }
-.header__auth a:hover {
+.header__auth a:hover,
+.solution-item .solution__item-btn:first-child a:hover {
 	background: #034430;
 }
 .header-center {
@@ -499,6 +500,10 @@ body{
 	text-decoration: none;
 	margin-bottom: 16px;
 }
+.stock-item__title a:hover,
+.blog-item__title a:hover {
+	color: var(--green-dark, #034430);
+}
 .stock-item__link a {
 	font-style: normal;
 	font-weight: 500;
@@ -506,6 +511,10 @@ body{
 	line-height: 140%;
 	text-decoration-line: underline;
 	color: #585858;
+}
+.stock-item__link a:hover,
+.blog-item__title a:hover {
+	text-decoration: none;
 }
 .blog-item {
 	display: flex;
@@ -1038,6 +1047,9 @@ body{
 	color: #111111;
 	margin-right: 10px;
 }
+.card-page .product-item__newprice {
+	font-size: 42px;
+}
 .product-item__oldprice  {
 	font-style: normal;
 	font-weight: 500;
@@ -1055,6 +1067,12 @@ body{
 	top: 49%;
 	left: 0;
 	rotate: 6deg;
+}
+.card-page .product-item__oldprice {
+	text-decoration-line: line-through;
+}
+.card-page .product-item__oldprice::before {
+	display: none;
 }
 .product-item__discount {
 	display: inline-flex;
@@ -1189,7 +1207,9 @@ body{
 	color: #111111;
 }
 .index__items-link a:hover,
-.about__link a:hover {
+.about__link a:hover,
+.solution__block-btn a:hover,
+.solution-item .solution__item-btn a:hover {
 	border: 2px solid #034430;
 	color: #034430;
 }

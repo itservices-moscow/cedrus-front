@@ -15,13 +15,15 @@ $(document).ready(function() {
   });
 
   function updateMinusButtonState() {
-    var input = $('.product-item__quanti input');
-    var minusButton = $('.product-item__quanti button:contains("-")');
+    $('.product-item__quanti').each(function() {
+      var input = $(this).find('input');
+      var minusButton = $(this).find('button:contains("-")');
 
-    if (input.val() <= 1) {
-      minusButton.prop('disabled', true);
-    } else {
-      minusButton.prop('disabled', false);
-    }
+      if (input.val() <= 1) {
+        minusButton.prop('disabled', true);
+      } else {
+        minusButton.prop('disabled', false);
+      }
+    });
   }
   });

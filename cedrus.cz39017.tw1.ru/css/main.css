@@ -12,6 +12,13 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: url("../fonts/Monrope/Manrope-Medium.eot");
+    src: url("../fonts/Monrope/Manrope-Mediumd41d.eot?#iefix")format("embedded-opentype"), url("../fonts/Monrope/Manrope-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
 :root { 
 	--gutter: 20px;
 	--white: #fff;

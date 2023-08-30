@@ -910,7 +910,6 @@ body{
 	margin-bottom: 20px;
 }
 .product-item__favorite a:hover svg path {
-	fill: #0C674B;
 	stroke: #0C674B;
 }
 .product-item__compare a {
@@ -923,7 +922,6 @@ body{
 	justify-content: center;
 }
 .product-item__compare a:hover svg path {
-	fill: #0C674B;
 	stroke: #0C674B;
 }
 .product-btn__load {
@@ -1600,7 +1598,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-right: 16px;
+	margin-right: 8px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;

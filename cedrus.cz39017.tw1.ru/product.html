@@ -15,12 +15,12 @@
 	<header>
 		<div class="header-top">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-1">
 						<div class="header__city">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-							  <path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
-							  <path d="M13 6.5C13 11 8 14.5 8 14.5C8 14.5 3 11 3 6.5C3 5.17392 3.52678 3.90215 4.46447 2.96447C5.40215 2.02678 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.02678 11.5355 2.96447C12.4732 3.90215 13 5.17392 13 6.5Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M13 6.5C13 11 8 14.5 8 14.5C8 14.5 3 11 3 6.5C3 5.17392 3.52678 3.90215 4.46447 2.96447C5.40215 2.02678 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.02678 11.5355 2.96447C12.4732 3.90215 13 5.17392 13 6.5Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 							<a data-fancybox href="#popup-city">Москва</a>
 						</div>
@@ -28,33 +28,14 @@
 					<div class="col-9">
 						<div class="header-top__menu">
 							<ul class="top__menu">
-								<li class="top__menu-item dropdown">
-									<a href="#" class="top__menu-link">Услуги</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Консультация</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Рекламация</a>
-										</li>
-									</ul>
+								<li class="top__menu-item">
+									<a href="stock.html" class="top__menu-link">Акции</a>
 								</li>
 								<li class="top__menu-item">
 									<a href="#" class="top__menu-link">Оплата и доставка</a>
 								</li>
 								<li class="top__menu-item">
-									<a href="stock.html" class="top__menu-link">Акции</a>
-								</li>
-								<li class="top__menu-item dropdown">
-									<a href="#" class="top__menu-link">Партнерам</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu__item">
-											<a href="opt.html" class="dropdown-menu__link">Оптовые поставки</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a href="franchise.html" class="dropdown-menu__link">Франшиза</a>
-										</li>
-									</ul>
+									<a href="#" class="top__menu-link">Рекламация</a>
 								</li>
 								<li class="top__menu-item dropdown">
 									<a href="#" class="top__menu-link">О компании</a>
@@ -66,7 +47,7 @@
 											<a href="blog.html" class="dropdown-menu__link">Блог</a>
 										</li>
 										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Технические свидетельства</a>
+											<a href="#" class="dropdown-menu__link">Контакты</a>
 										</li>
 									</ul>
 								</li>
@@ -89,25 +70,22 @@
 						<span></span>
 						<span></span>
 					</div>
-			
 					<div class="col-xl-1 col-md-6 col-sm-6 col-12">
 						<div class="header-logo">
-							<a href="#"><img src="img/logo.svg" alt="alt"></a>
+							<a href="index.html"><img src="img/logo.svg" alt="alt"></a>
 						</div>
 					</div>
 					<div class="col-xl-7 col-md-12 col-12">
 						<div class="header-seach">
-							<form action="#">
-								<div class="form-control">
-									<input type="text">
-									<button><img src="img/seacrh.svg" alt=""></button>
-								</div>
+							<form action="#" class="form-control">
+								<input type="text" placeholder="Плиточный клей">
+								<button><img src="img/seacrh.svg" alt=""></button>
 							</form>
 						</div>
 					</div>
 					<div class="col-xl-2 col-md-6 col-sm-6 col-12">
-						<div class="header-phone">
-							<p>Главный офис <a data-fancybox href="#popup-citys">Москва</a></p>
+						<div class="header-phone phone">
+							<p>Пн-Пт 09:00-18:00</p>
 							<a href="#">+7-800-500-06-06</a>
 						</div>
 					</div>
@@ -115,46 +93,49 @@
 						<div class="header__list">
 							<div class="header__item">
 								<div class="header__item-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-									  <g clip-path="url(#clip0_77_2693)">
-									    <rect width="24" height="24" rx="4" fill="white"/>
-									    <path d="M11.7858 3.42857V21.1978" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-									    <path d="M9.36243 21.1978H14.2086" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-									    <path d="M4.51611 8.27473L19.0546 5.04396" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-									    <path d="M1.28577 16.3517C1.28577 18.1357 3.305 18.7747 4.51654 18.7747C5.72807 18.7747 7.74731 18.1357 7.74731 16.3517L4.51654 8.27475L1.28577 16.3517Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-									    <path d="M15.8245 13.1209C15.8245 14.9049 17.8437 15.544 19.0552 15.544C20.2668 15.544 22.286 14.9049 22.286 13.1209L19.0552 5.04396L15.8245 13.1209Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-									  </g>
-									  <defs>
-									    <clipPath id="clip0_77_2693">
-									      <rect width="24" height="24" rx="4" fill="white"/>
-									    </clipPath>
-									  </defs>
+									<a href="compare-no.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<g clip-path="url(#clip0_77_2693)">
+										<rect width="24" height="24" rx="4" fill="white"/>
+										<path d="M11.7858 3.42857V21.1978" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M9.36243 21.1978H14.2086" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M4.51611 8.27473L19.0546 5.04396" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M1.28577 16.3517C1.28577 18.1357 3.305 18.7747 4.51654 18.7747C5.72807 18.7747 7.74731 18.1357 7.74731 16.3517L4.51654 8.27475L1.28577 16.3517Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15.8245 13.1209C15.8245 14.9049 17.8437 15.544 19.0552 15.544C20.2668 15.544 22.286 14.9049 22.286 13.1209L19.0552 5.04396L15.8245 13.1209Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</g>
+									<defs>
+										<clipPath id="clip0_77_2693">
+											<rect width="24" height="24" rx="4" fill="white"/>
+										</clipPath>
+									</defs>
 									</svg>
-									
+									</a>
 								</div>
 							</div>
 							<div class="header__item">
 								<div class="header__item-icon">
-									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-									  <g clip-path="url(#clip0_231_34377)">
-									    <rect width="24" height="24" rx="4" fill="white"/>
-									    <path d="M12 20.25C12 20.25 2.25 15 2.25 8.8125C2.25 7.46984 2.78337 6.18217 3.73277 5.23277C4.68217 4.28337 5.96984 3.75 7.3125 3.75C9.43031 3.75 11.2444 4.90406 12 6.75C12.7556 4.90406 14.5697 3.75 16.6875 3.75C18.0302 3.75 19.3178 4.28337 20.2672 5.23277C21.2166 6.18217 21.75 7.46984 21.75 8.8125C21.75 15 12 20.25 12 20.25Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-									  </g>
-									  <defs>
-									    <clipPath id="clip0_231_34377">
-									      <rect width="24" height="24" rx="4" fill="white"/>
-									    </clipPath>
-									  </defs>
-									</svg>
+									<a href="favotite-no.html">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<g clip-path="url(#clip0_231_34377)">
+												<rect width="24" height="24" rx="4" fill="white"/>
+												<path d="M12 20.25C12 20.25 2.25 15 2.25 8.8125C2.25 7.46984 2.78337 6.18217 3.73277 5.23277C4.68217 4.28337 5.96984 3.75 7.3125 3.75C9.43031 3.75 11.2444 4.90406 12 6.75C12.7556 4.90406 14.5697 3.75 16.6875 3.75C18.0302 3.75 19.3178 4.28337 20.2672 5.23277C21.2166 6.18217 21.75 7.46984 21.75 8.8125C21.75 15 12 20.25 12 20.25Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</g>
+											<defs>
+												<clipPath id="clip0_231_34377">
+													<rect width="24" height="24" rx="4" fill="white"/>
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
 								</div>
 							</div>
 							<div class="header__item header__item-cart">
 								<div class="header__item-icon">
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-									  <path d="M19.8074 20.3571H4.65742C4.47288 20.3563 4.29496 20.2882 4.15693 20.1657C4.0189 20.0432 3.93021 19.8747 3.90742 19.6915L2.57617 7.69151C2.56433 7.58696 2.57463 7.48108 2.60639 7.38077C2.63814 7.28045 2.69065 7.18794 2.76051 7.10924C2.83036 7.03055 2.91599 6.96743 3.01183 6.924C3.10767 6.88057 3.21158 6.85779 3.3168 6.85714H21.148C21.2533 6.85779 21.3572 6.88057 21.453 6.924C21.5489 6.96743 21.6345 7.03055 21.7043 7.10924C21.7742 7.18794 21.8267 7.28045 21.8585 7.38077C21.8902 7.48108 21.9005 7.58696 21.8887 7.69151L20.5574 19.6915C20.5346 19.8747 20.4459 20.0432 20.3079 20.1657C20.1699 20.2882 19.992 20.3563 19.8074 20.3571Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-									  <path d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M19.8074 20.3571H4.65742C4.47288 20.3563 4.29496 20.2882 4.15693 20.1657C4.0189 20.0432 3.93021 19.8747 3.90742 19.6915L2.57617 7.69151C2.56433 7.58696 2.57463 7.48108 2.60639 7.38077C2.63814 7.28045 2.69065 7.18794 2.76051 7.10924C2.83036 7.03055 2.91599 6.96743 3.01183 6.924C3.10767 6.88057 3.21158 6.85779 3.3168 6.85714H21.148C21.2533 6.85779 21.3572 6.88057 21.453 6.924C21.5489 6.96743 21.6345 7.03055 21.7043 7.10924C21.7742 7.18794 21.8267 7.28045 21.8585 7.38077C21.8902 7.48108 21.9005 7.58696 21.8887 7.69151L20.5574 19.6915C20.5346 19.8747 20.4459 20.0432 20.3079 20.1657C20.1699 20.2882 19.992 20.3563 19.8074 20.3571Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 									</svg>
 								</div>
+								<div class="header__item-count">2</div>
 							</div>
 						</div>
 					</div>
@@ -171,7 +152,7 @@
 					<path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#585858" stroke-linecap="round" stroke-linejoin="round"/>
 					<path d="M13 6.5C13 11 8 14.5 8 14.5C8 14.5 3 11 3 6.5C3 5.17392 3.52678 3.90215 4.46447 2.96447C5.40215 2.02678 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.02678 11.5355 2.96447C12.4732 3.90215 13 5.17392 13 6.5Z" stroke="#585858" stroke-linecap="round" stroke-linejoin="round"/>
 					</svg>
-					<a href="#">Москва</a>
+					<a data-fancybox="" href="#popup-city">Москва</a>
 				</div>
 				<div class="menu-mob__close">
 					<a href="#">
@@ -183,38 +164,83 @@
 				</div>
 			</div>
 			<ul class="menu-mob__list">
-				<li class="menu-mob__item">
-					<a href="#" class="menu-mob__link">Каталог</a>
+				<li class="menu-mob__item phone">
+					<a href="tel:+7-800-500-06-06">+7-800-500-06-06</a>
+					<p>Пн-Пт 09:00-18:00</p>
 				</li>
-				<li class="menu-mob__item">
-					<a href="#" class="menu-mob__link">Услуги</a>
-				</li>
-				<li class="menu-mob__item">
-					<a href="#" class="menu-mob__link">Оплата и доставка</a>
+				<input type="checkbox" id="mob-dropdown-1">
+				<li class="menu-mob__item mob-dropdown">
+					<label class="menu-mob__link" for="mob-dropdown-1">Каталог</label>
+					<ul class="menu-mob__list">
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Категории материалов</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Готовые системы</a>
+						</li>
+					</ul>
 				</li>
 				<li class="menu-mob__item">
 					<a href="#" class="menu-mob__link">Акции</a>
 				</li>
 				<li class="menu-mob__item">
-					<a href="#" class="menu-mob__link">Партнерам</a>
+					<a href="#" class="menu-mob__link">Оплата и доставка</a>
 				</li>
 				<li class="menu-mob__item">
-					<a href="#" class="menu-mob__link">О компании</a>
+					<a href="#" class="menu-mob__link">Рекламация</a>
+				</li>
+				<input type="checkbox" id="mob-dropdown-2">
+				<li class="menu-mob__item mob-dropdown">
+					<label class="menu-mob__link" for="mob-dropdown-2">О компании</label>
+					<ul class="menu-mob__list">
+						<li class="menu-mob__item">
+							<a href="about.html" class="menu-mob__link">О компании</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="blog.html" class="menu-mob__link">Блог</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Контакты</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 			<div class="menu-mob__bottom">
 				<div class="mob-bottom__btn">
-					<a href="compare-no.html"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="22" viewBox="0 0 15 22" fill="none">
-					<path d="M14.0898 6.26398L14.0898 20.264" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M9.71484 10.639L9.71484 20.264" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M4.94922 0.958435L4.94922 20.2084" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					<path d="M0.964844 13.264L0.964844 20.264" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg><span>Сравнение</span></a>
+					<a href="compare-no.html">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g clip-path="url(#clip0_77_2693)">
+								<rect width="24" height="24" rx="4" fill="white"/>
+								<path d="M11.7858 3.42857V21.1978" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M9.36243 21.1978H14.2086" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4.51611 8.27473L19.0546 5.04396" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M1.28577 16.3517C1.28577 18.1357 3.305 18.7747 4.51654 18.7747C5.72807 18.7747 7.74731 18.1357 7.74731 16.3517L4.51654 8.27475L1.28577 16.3517Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.8245 13.1209C15.8245 14.9049 17.8437 15.544 19.0552 15.544C20.2668 15.544 22.286 14.9049 22.286 13.1209L19.0552 5.04396L15.8245 13.1209Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_77_2693">
+									<rect width="24" height="24" rx="4" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+						<span>Сравнение</span>
+					</a>
 				</div>
 				<div class="mob-bottom__btn">
-					<a href="favotite-no.html"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
-					<path d="M13 20.625C13 20.625 1.625 14.5 1.625 7.28125C1.625 5.71482 2.24726 4.21254 3.3549 3.1049C4.46254 1.99726 5.96482 1.375 7.53125 1.375C10.002 1.375 12.1184 2.72141 13 4.875C13.8816 2.72141 15.998 1.375 18.4688 1.375C20.0352 1.375 21.5375 1.99726 22.6451 3.1049C23.7527 4.21254 24.375 5.71482 24.375 7.28125C24.375 14.5 13 20.625 13 20.625Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg><span>Избранное</span></a>
+					<a href="favotite-no.html">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g clip-path="url(#clip0_231_34377)">
+								<rect width="24" height="24" rx="4" fill="white"/>
+								<path d="M12 20.25C12 20.25 2.25 15 2.25 8.8125C2.25 7.46984 2.78337 6.18217 3.73277 5.23277C4.68217 4.28337 5.96984 3.75 7.3125 3.75C9.43031 3.75 11.2444 4.90406 12 6.75C12.7556 4.90406 14.5697 3.75 16.6875 3.75C18.0302 3.75 19.3178 4.28337 20.2672 5.23277C21.2166 6.18217 21.75 7.46984 21.75 8.8125C21.75 15 12 20.25 12 20.25Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_231_34377">
+									<rect width="24" height="24" rx="4" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+						<span>Избранное</span>
+					</a>
 				</div>
 				<div class="mob-bottom__btn">
 					<a href="cart-no.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -258,7 +284,7 @@
 						                        <div class="catalogm-menu__one-title">
 						                            Материалы
 						                        </div>
-						                        <ul class="catalogm-menu__list">  	  
+						                        <ul class="catalogm-menu__list">
 						                            <li class="catalogm-menu__item">
 						                                <a href="#" class="catalogm-menu__link">Смеси для пола</a>
 						                            </li>
@@ -283,7 +309,7 @@
 						                        <div class="catalogm-menu__one-title">
 						                            Материалы
 						                        </div>
-						                        <ul class="catalogm-menu__list">  	  
+						                        <ul class="catalogm-menu__list">
 						                            <li class="catalogm-menu__item">
 						                                <a href="#" class="catalogm-menu__link">Штукатурки</a>
 						                            </li>
@@ -308,7 +334,7 @@
 						                        <div class="catalogm-menu__one-title">
 						                            Материалы
 						                        </div>
-						                        <ul class="catalogm-menu__list">  	  
+						                        <ul class="catalogm-menu__list">
 						                            <li class="catalogm-menu__item">
 						                                <a href="#" class="catalogm-menu__link">Шпаклевки</a>
 						                            </li>
@@ -333,7 +359,7 @@
 						                        <div class="catalogm-menu__one-title">
 						                            Материалы
 						                        </div>
-						                        <ul class="catalogm-menu__list">  	  
+						                        <ul class="catalogm-menu__list">
 						                            <li class="catalogm-menu__item">
 						                                <a href="#" class="catalogm-menu__link">Плиточный клей</a>
 						                            </li>
@@ -355,7 +381,7 @@
 						                        </ul>
 						                    </div>
 					                    </div>
-					                   
+
 										<div class="catalog-menu__info-brend">
 											<div class="menu__info-brend">Бренды</div>
 											<div class="brend-list">
@@ -373,7 +399,7 @@
 												</div>
 											</div>
 										</div>
-									
+
 									</div>
 								</div>
 							</div>
@@ -405,7 +431,7 @@
 					</li>
 				</ul>
 			</div>
-		</div>	
+		</div>
 	</header>
 	<section class="breadcrumbs">
 		<div class="container">
@@ -464,9 +490,9 @@
 						       <img src="img/product.png" class="d-block w-100" alt="product">
 						    </div>
 						  </div>
-						 
+
 						</div>
-					</div>	
+					</div>
 				</div>
 				<div class="col-xl-4 col-md-6 col-sm-6 col-12">
 					<div class="product-row">
@@ -576,16 +602,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-4 col-md-6 col-12">
+				<div class="col-xl-4 col-12">
 					<div class="product-blocks__fixed">
 						<div class="blocks__green-btns">
 							<div class="green-btns__cart">
 								<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
 							</div>
 							<div class="product-item__quanti">
-								<button>+</button>
-								<input type="number" value="1">
 								<button>-</button>
+								<input type="number" value="1">
+								<button>+</button>
 							</div>
 						</div>
 						<div class="blocks__green-click">
@@ -596,8 +622,8 @@
 						<div class="product-blocks__top">
 							<div class="product-blocks__stock">
 								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-								  <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"/>
-								  <path d="M13.4375 8.125L8.85156 12.5L6.5625 10.3125" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M13.4375 8.125L8.85156 12.5L6.5625 10.3125" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>В наличии
 							</div>
 							<div class="product-blocks__compare">
@@ -616,7 +642,7 @@
 									      <rect width="28" height="28" rx="4" fill="white"/>
 									    </clipPath>
 									  </defs>
-									</svg>Сравнение</a>
+									</svg>Сравнить</a>
 							</div>
 							<div class="product-blocks__soc">
 								<a href="#">
@@ -629,21 +655,27 @@
 									</svg> Поделиться</a>
 							</div>
 						</div>
-						
+
 						<div class="product-blocks__green">
 							<div class="blocks__green-top">
 								<div class="product-item__price">
 									<div class="product-item__newprice">
-										<span>700</span>₽
+										<span>3 360</span>₽
 									</div>
 									<div class="product-item__oldprice">
 										<span>1000</span>₽
 									</div>
 								</div>
+								<div class="product-blocks__stock">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+										<path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M13.4375 8.125L8.85156 12.5L6.5625 10.3125" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>В наличии
+								</div>
 								<div class="product-item__quanti">
-									<button>+</button>
-									<input type="number" value="1">
 									<button>-</button>
+									<input type="number" value="1">
+									<button>+</button>
 								</div>
 							</div>
 							<div class="blocks__green-btns">
@@ -675,172 +707,171 @@
 				<div class="col-12">
 					<div class="card-tabs">
 						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Характеристики</button>
+							</li>
   							<li class="nav-item" role="presentation">
-							    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Применение</button>
-							  </li>
-							  <li class="nav-item" role="presentation">
-							    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Характеристики</button>
-							  </li>
-							  <li class="nav-item" role="presentation">
-							    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Сертификаты</button>
-							  </li>
-							  <li class="nav-item" role="presentation">
-							    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#photo" type="button" role="tab" aria-controls="contact" aria-selected="false">Фото и видео</button>
-							  </li>
-							</ul>
-							<div class="tab-content" id="myTabContent">
-							  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-							  	<h3>Как применять?</h3>
-							  	<p>Шпаклевка ОСНОВИТ ЭЛИСИЛК PP37 W предназначена для окончательного выравнивания стен и потолков в сухих и влажных помещениях.Рекомендуется для устранения мельчайших дефектов поверхности, подходит для шпаклевания «на сдир»Является финишным слоем при подготовке поверхностей под последующее окрашивание, оклеивание обоями.Для внутренних работ.</p>
-							  	<h3>Рекомендуемые основания</h3>
-							  	<ul>
-							  		<li>Бетонные основания</li>
-							  		<li>Гипсовые и цементные штукатурки</li>
-							  		<li>Выравнивающие шпаклевки</li>
-							  		<li> ГКЛ, ГВЛ, ПГП, СМЛ</li>
-							  	</ul>
-							  	<p> и любые другие минеральные основания, не требующие толстослойного выравнивания.</p>
-							  </div>
-							  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-							  	<div class="product-atribyte__list">
-							<div class="product-atribyte__item">
-								<div class="product-atribyte__key">
-									Цвет
-								</div>
-								<span class="product-atribyte--separator"></span>
-								<div class="product-atribyte__value">
-									Супербелая
-								</div>
-							</div>
-							<div class="product-atribyte__item">
-								<div class="product-atribyte__key">
-									Вес
-								</div>
-								<span class="product-atribyte--separator"></span>
-								<div class="product-atribyte__value">
-									20 кг
-								</div>
-							</div>
-							<div class="product-atribyte__item">
-								<div class="product-atribyte__key">
-									Прочность сцепления с основанием
-								</div>
-								<span class="product-atribyte--separator"></span>
-								<div class="product-atribyte__value">
-									≥0,5 МПа
-								</div>
-							</div>
-							<div class="product-atribyte__item">
-								<div class="product-atribyte__key">
-									Расход воды на 1 кг сухой смеси
-								</div>
-								<span class="product-atribyte--separator"></span>
-								<div class="product-atribyte__value">
-									0,36-0,37 л
-								</div>
-							</div>
-							<div class="product-atribyte__item">
-								<div class="product-atribyte__key">
-									Жизнеспособность
-								</div>
-								<span class="product-atribyte--separator"></span>
-								<div class="product-atribyte__value">
-									24 часа
-								</div>
-							</div>
-							<div class="product-atribyte__item">
-								<div class="product-atribyte__key">
-									Расход смеси при слое 1 мм
-								</div>
-								<span class="product-atribyte--separator"></span>
-								<div class="product-atribyte__value">
-									1 кг/м²
+								<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Применение</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Сертификаты</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#photo" type="button" role="tab" aria-controls="contact" aria-selected="false">Фото и видео</button>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								<div class="product-atribyte__list">
+									<div class="product-atribyte__item">
+										<div class="product-atribyte__key">
+											Цвет
+										</div>
+										<span class="product-atribyte--separator"></span>
+										<div class="product-atribyte__value">
+											Супербелая
+										</div>
+									</div>
+									<div class="product-atribyte__item">
+										<div class="product-atribyte__key">
+											Вес
+										</div>
+										<span class="product-atribyte--separator"></span>
+										<div class="product-atribyte__value">
+											20 кг
+										</div>
+									</div>
+									<div class="product-atribyte__item">
+										<div class="product-atribyte__key">
+											Прочность сцепления с основанием
+										</div>
+										<span class="product-atribyte--separator"></span>
+										<div class="product-atribyte__value">
+											≥0,5 МПа
+										</div>
+									</div>
+									<div class="product-atribyte__item">
+										<div class="product-atribyte__key">
+											Расход воды на 1 кг сухой смеси
+										</div>
+										<span class="product-atribyte--separator"></span>
+										<div class="product-atribyte__value">
+											0,36-0,37 л
+										</div>
+									</div>
+									<div class="product-atribyte__item">
+										<div class="product-atribyte__key">
+											Жизнеспособность
+										</div>
+										<span class="product-atribyte--separator"></span>
+										<div class="product-atribyte__value">
+											24 часа
+										</div>
+									</div>
+									<div class="product-atribyte__item">
+										<div class="product-atribyte__key">
+											Расход смеси при слое 1 мм
+										</div>
+										<span class="product-atribyte--separator"></span>
+										<div class="product-atribyte__value">
+											1 кг/м²
+										</div>
+									</div>
+									<div class="product-atribyte__item">
+										<div class="product-atribyte__key">
+											Рекомендуемая толщина слоя
+										</div>
+										<span class="product-atribyte--separator"></span>
+										<div class="product-atribyte__value">
+											0-2 мм
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="product-atribyte__item">
-								<div class="product-atribyte__key">
-									Рекомендуемая толщина слоя
-								</div>
-								<span class="product-atribyte--separator"></span>
-								<div class="product-atribyte__value">
-									0-2 мм
+							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<h3>Как применять?</h3>
+								<p>Шпаклевка ОСНОВИТ ЭЛИСИЛК PP37 W предназначена для окончательного выравнивания стен и потолков в сухих и влажных помещениях.Рекомендуется для устранения мельчайших дефектов поверхности, подходит для шпаклевания «на сдир»Является финишным слоем при подготовке поверхностей под последующее окрашивание, оклеивание обоями.Для внутренних работ.</p>
+								<h3>Рекомендуемые основания</h3>
+								<ul>
+									<li>Бетонные основания</li>
+									<li>Гипсовые и цементные штукатурки</li>
+									<li>Выравнивающие шпаклевки</li>
+									<li> ГКЛ, ГВЛ, ПГП, СМЛ</li>
+								</ul>
+								<p> и любые другие минеральные основания, не требующие толстослойного выравнивания.</p>
+							</div>
+							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+								<div class="row">
+									<div class="col-xl-6 col-12">
+										<div class="evidence-list">
+											<div class="evidence-item">
+											<div class="evidence-item__icon">
+												<img src="img/doc-icon.svg" alt="alt">
+											</div>
+											<div class="evidence-item__title">
+												Сертификат
+											</div>
+											<div class="evidence-item__link">
+												<a href="#">Скачать</a>
+											</div>
+										</div>
+										<div class="evidence-item">
+											<div class="evidence-item__icon">
+												<img src="img/doc-icon.svg" alt="alt">
+											</div>
+											<div class="evidence-item__title">
+												Сертификат
+											</div>
+											<div class="evidence-item__link">
+												<a href="#">Скачать</a>
+											</div>
+										</div>
+										<div class="evidence-item">
+											<div class="evidence-item__icon">
+												<img src="img/doc-icon.svg" alt="alt">
+											</div>
+											<div class="evidence-item__title">
+												Сертификат
+											</div>
+											<div class="evidence-item__link">
+												<a href="#">Скачать</a>
+											</div>
+										</div>
+										</div>
+									</div>
+									<div class="col-xl-6 col-12">
+										<div class="evidence-list">
+											<div class="evidence-item">
+											<div class="evidence-item__icon">
+												<img src="img/doc-icon.svg" alt="alt">
+											</div>
+											<div class="evidence-item__title">
+												Сертификат
+											</div>
+											<div class="evidence-item__link">
+												<a href="#">Скачать</a>
+											</div>
+										</div>
+										<div class="evidence-item">
+											<div class="evidence-item__icon">
+												<img src="img/doc-icon.svg" alt="alt">
+											</div>
+											<div class="evidence-item__title">
+												Сертификат
+											</div>
+											<div class="evidence-item__link">
+												<a href="#">Скачать</a>
+											</div>
+										</div>
+										</div>
+									</div>
 								</div>
 							</div>
+							<div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="contact-tab">..3.</div>
 						</div>
-							  </div>
-							  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-							  	<div class="row">
-							  		<div class="col-xl-6 col-12">
-							  			<div class="evidence-list">
-							  				<div class="evidence-item">
-											<div class="evidence-item__icon">
-												<img src="img/doc-icon.svg" alt="alt">
-											</div>
-											<div class="evidence-item__title">
-												Сертификат
-											</div>
-											<div class="evidence-item__link">
-												<a href="#">Скачать</a>
-											</div>
-										</div>
-										<div class="evidence-item">
-											<div class="evidence-item__icon">
-												<img src="img/doc-icon.svg" alt="alt">
-											</div>
-											<div class="evidence-item__title">
-												Сертификат
-											</div>
-											<div class="evidence-item__link">
-												<a href="#">Скачать</a>
-											</div>
-										</div>
-										<div class="evidence-item">
-											<div class="evidence-item__icon">
-												<img src="img/doc-icon.svg" alt="alt">
-											</div>
-											<div class="evidence-item__title">
-												Сертификат
-											</div>
-											<div class="evidence-item__link">
-												<a href="#">Скачать</a>
-											</div>
-										</div>
-							  			</div>
-							  		</div>
-							  		<div class="col-xl-6 col-12">
-							  			<div class="evidence-list">
-							  				<div class="evidence-item">
-											<div class="evidence-item__icon">
-												<img src="img/doc-icon.svg" alt="alt">
-											</div>
-											<div class="evidence-item__title">
-												Сертификат
-											</div>
-											<div class="evidence-item__link">
-												<a href="#">Скачать</a>
-											</div>
-										</div>
-										<div class="evidence-item">
-											<div class="evidence-item__icon">
-												<img src="img/doc-icon.svg" alt="alt">
-											</div>
-											<div class="evidence-item__title">
-												Сертификат
-											</div>
-											<div class="evidence-item__link">
-												<a href="#">Скачать</a>
-											</div>
-										</div>
-							  			</div>
-							  		</div>
-							  	</div>
-							  
-							  </div>
-							  <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="contact-tab">..3.</div>
-							</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</section>
 	<section class="calc" id="cart-section">
@@ -852,7 +883,7 @@
 							Калькулятор расчета материала
 						</div>
 					</div>
-					<div class="col-xl-6 col-md-6 col-12">
+					<div class="col-xl-6 col-12">
 						<div class="calc-form">
 							<form action="#">
 								<div class="mb-3">
@@ -863,9 +894,9 @@
 								  <label class="form-label">Минимальная толщина слоя, мм</label>
 								  <input type="text" class="form-control" placeholder="Укажите толщину в мм">
 								</div>
-								<div class="mb-3">
+								<div>
 								    <button type="submit" class="btn btn-calc">Рассчитать</button>
-								  </div>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -873,7 +904,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="slider-product">
 		<div class="container">
 			<div class="col-12">
@@ -923,7 +954,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -936,7 +967,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -957,9 +988,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1008,7 +1039,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1021,7 +1052,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1042,9 +1073,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1093,7 +1124,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1106,7 +1137,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1127,9 +1158,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1178,7 +1209,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1191,7 +1222,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1212,9 +1243,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1263,7 +1294,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1276,7 +1307,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1297,9 +1328,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1371,7 +1402,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1384,7 +1415,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1405,9 +1436,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1456,7 +1487,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1469,7 +1500,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1490,9 +1521,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1541,7 +1572,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1554,7 +1585,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1575,9 +1606,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1626,7 +1657,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1639,7 +1670,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1660,9 +1691,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1711,7 +1742,7 @@
 											</a>
 										</div>
 									</div>
-					
+
 									<div class="product__image">
 										<div class="product__switch image-switch">
 											<div class="image-switch__item">
@@ -1724,7 +1755,7 @@
 												<div class="image-switch__img"><img src="img/product1.png" alt="product"></div>
 											</div>
 										</div>
-										
+
 									</div>
 									<ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
 									<div class="product-item__title">
@@ -1745,9 +1776,9 @@
 									</div>
 									<div class="product-item__btns">
 										<div class="product-item__quanti">
-											<button>+</button>
-											<input type="number" value="1">
 											<button>-</button>
+											<input type="number" value="1">
+											<button>+</button>
 										</div>
 										<div class="product-item__cart">
 											<a href="#">В корзину <img src="img/add.svg" alt="alt"></a>
@@ -1817,9 +1848,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-2 col-md-4 col-sm-4 col-6">
+				<div class="col-xl-3 col-md-4 col-sm-4 col-6">
 					<div class="footer__logo">
-						<a href="#"><img src="img/logo-f.svg" alt="alt"></a>
+						<a href="index.html"><img src="img/logo-f.svg" alt="alt"></a>
 					</div>
 					<div class="footer__info">
 						<p>ООО «Седрус»</p>
@@ -1828,15 +1859,33 @@
 						<p>ОГРН 5087746325960</p>
 					</div>
 				</div>
-				<div class="col-xl-2 col-md-4 col-sm-4 col-6">
+				<div class="col-xl-2 col-md-4 col-sm-4 col-6 d-none d-sm-block">
 					<div class="footer__menu-block">
-					<span>Покупателям</span>
+					<span>Каталог</span>
 					<ul class="footer__menu">
 						<li class="footer__menu-item">
 							<a href="#" class="footer__menu-link">Категории товаров</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Готовые решения</a>
+							<a href="#" class="footer__menu-link">Готовые системы</a>
+						</li>
+					</ul>
+					</div>
+					<div class="footer__menu-block">
+					<span>Услуги</span>
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<a href="#" class="footer__menu-link">Рекламация</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+				<div class="col-xl-2 col-md-4 col-sm-4 col-6 d-none d-sm-block">
+					<div class="footer__menu-block">
+					<span>Покупателям</span>
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<a href="#" class="footer__menu-link">Акции</a>
 						</li>
 						<li class="footer__menu-item">
 							<a href="#" class="footer__menu-link">Оплата и доставка</a>
@@ -1850,33 +1899,7 @@
 					</ul>
 					</div>
 				</div>
-				<div class="col-xl-2 col-md-4 col-sm-4 col-6">
-					<div class="footer__menu-block">
-					<span>Партнерам</span>
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Оптовые поставки</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Франшиза</a>
-						</li>
-					</ul>
-					</div>
-				</div>
-				<div class="col-xl-2 col-md-4 col-sm-4 col-6">
-					<div class="footer__menu-block">
-					<span>Услуги</span>
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Консультация</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Рекламация</a>
-						</li>
-					</ul>
-					</div>
-				</div>
-				<div class="col-xl-2 col-md-4 col-sm-4 col-6">
+				<div class="col-xl-2 col-md-4 col-sm-4 col-6 d-none d-sm-block">
 					<div class="footer__menu-block">
 					<span>Компания</span>
 					<ul class="footer__menu">
@@ -1884,13 +1907,7 @@
 							<a href="#" class="footer__menu-link">О компании</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Новости</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Технические свидетельства</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Акции</a>
+							<a href="#" class="footer__menu-link">Блог</a>
 						</li>
 						<li class="footer__menu-item">
 							<a href="#" class="footer__menu-link">Контакты</a>
@@ -1898,7 +1915,7 @@
 					</ul>
 					</div>
 				</div>
-				<div class="col-xl-2 col-md-4 col-sm-4 col-6">
+				<div class="col-xl-3 col-md-4 col-sm-4 col-6">
 					<div class="footer__menu-block">
 					<span>Контакты</span>
 						<div class="footer__info-block">
@@ -2038,7 +2055,7 @@ if (products) {
                 slideToClickedSlide: true,
             }
         }
-		});		
+		});
 	</script>
 </body>
 </html>

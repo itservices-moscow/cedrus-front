@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Избранное пустое</title>
-	<link rel="icon" href="favicon.html" >
 	<link href="../cdn.jsdelivr.net/npm/bootstrap%405.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
 	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
@@ -16,54 +14,39 @@
 	<header>
 		<div class="header-top">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-1">
 						<div class="header__city">
-							<img src="img/city.svg" alt="alt"><a href="#">Москва</a>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M13 6.5C13 11 8 14.5 8 14.5C8 14.5 3 11 3 6.5C3 5.17392 3.52678 3.90215 4.46447 2.96447C5.40215 2.02678 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.02678 11.5355 2.96447C12.4732 3.90215 13 5.17392 13 6.5Z" stroke="#111111" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<a data-fancybox href="#popup-city">Москва</a>
 						</div>
 					</div>
 					<div class="col-9">
 						<div class="header-top__menu">
 							<ul class="top__menu">
-								<li class="top__menu-item dropdown">
-									<a href="#" class="top__menu-link">Услуги</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Консультация</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Рекламация</a>
-										</li>
-									</ul>
+								<li class="top__menu-item">
+									<a href="stock.html" class="top__menu-link">Акции</a>
 								</li>
 								<li class="top__menu-item">
 									<a href="#" class="top__menu-link">Оплата и доставка</a>
 								</li>
 								<li class="top__menu-item">
-									<a href="#" class="top__menu-link">Акции</a>
-								</li>
-								<li class="top__menu-item dropdown">
-									<a href="#" class="top__menu-link">Партнерам</a>
-									<ul class="dropdown-menu">
-										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Оптовые поставки</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Франшиза</a>
-										</li>
-									</ul>
+									<a href="#" class="top__menu-link">Рекламация</a>
 								</li>
 								<li class="top__menu-item dropdown">
 									<a href="#" class="top__menu-link">О компании</a>
 									<ul class="dropdown-menu">
 										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">О компании</a>
+											<a href="about.html" class="dropdown-menu__link">О компании</a>
 										</li>
 										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Блог</a>
+											<a href="blog.html" class="dropdown-menu__link">Блог</a>
 										</li>
 										<li class="dropdown-menu__item">
-											<a href="#" class="dropdown-menu__link">Технические свидетельства</a>
+											<a href="#" class="dropdown-menu__link">Контакты</a>
 										</li>
 									</ul>
 								</li>
@@ -72,7 +55,7 @@
 					</div>
 					<div class="col-2">
 						<div class="header__auth">
-							<a href="#">Личный кабинет</a>
+							<a href="login.html">Личный кабинет</a>
 						</div>
 					</div>
 				</div>
@@ -81,56 +64,194 @@
 		<div class="header-center">
 			<div class="container">
 				<div class="row">
-			
-					<div class="col-1">
+					<div class="header__burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="col-xl-1 col-md-6 col-sm-6 col-12">
 						<div class="header-logo">
-							<a href="#"><img src="img/logo.svg" alt="alt"></a>
+							<a href="index.html"><img src="img/logo.svg" alt="alt"></a>
 						</div>
 					</div>
-					<div class="col-2">
-						<div class="header-phone">
-							<p>Главный офис Москва</p>
-							<a href="#">+7-800-500-06-06</a>
-						</div>
-					</div>
-					<div class="col-6">
+					<div class="col-xl-7 col-md-12 col-12">
 						<div class="header-seach">
-							<form action="#">
-								<div class="form-control">
-									<input type="text">
-									<button><img src="img/seacrh.svg" alt=""></button>
-								</div>
+							<form action="#" class="form-control">
+								<input type="text" placeholder="Плиточный клей">
+								<button><img src="img/seacrh.svg" alt=""></button>
 							</form>
 						</div>
 					</div>
-					<div class="col-3">
+					<div class="col-xl-2 col-md-6 col-sm-6 col-12">
+						<div class="header-phone phone">
+							<p>Пн-Пт 09:00-18:00</p>
+							<a href="#">+7-800-500-06-06</a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-md-2 col-sm-2 col-3">
 						<div class="header__list">
 							<div class="header__item">
 								<div class="header__item-icon">
-									<img src="img/compare.svg" alt="">
-								</div>
-								<div class="header__item-link">
-									<a href="#">Сравнение</a>
+									<a href="compare-no.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+									<g clip-path="url(#clip0_77_2693)">
+										<rect width="24" height="24" rx="4" fill="white"/>
+										<path d="M11.7858 3.42857V21.1978" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M9.36243 21.1978H14.2086" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M4.51611 8.27473L19.0546 5.04396" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M1.28577 16.3517C1.28577 18.1357 3.305 18.7747 4.51654 18.7747C5.72807 18.7747 7.74731 18.1357 7.74731 16.3517L4.51654 8.27475L1.28577 16.3517Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M15.8245 13.1209C15.8245 14.9049 17.8437 15.544 19.0552 15.544C20.2668 15.544 22.286 14.9049 22.286 13.1209L19.0552 5.04396L15.8245 13.1209Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</g>
+									<defs>
+										<clipPath id="clip0_77_2693">
+											<rect width="24" height="24" rx="4" fill="white"/>
+										</clipPath>
+									</defs>
+									</svg>
+									</a>
 								</div>
 							</div>
 							<div class="header__item">
 								<div class="header__item-icon">
-									<img src="img/favorite.svg" alt="">
-								</div>
-								<div class="header__item-link">
-									<a href="#">Избранное</a>
+									<a href="favotite-no.html">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<g clip-path="url(#clip0_231_34377)">
+												<rect width="24" height="24" rx="4" fill="white"/>
+												<path d="M12 20.25C12 20.25 2.25 15 2.25 8.8125C2.25 7.46984 2.78337 6.18217 3.73277 5.23277C4.68217 4.28337 5.96984 3.75 7.3125 3.75C9.43031 3.75 11.2444 4.90406 12 6.75C12.7556 4.90406 14.5697 3.75 16.6875 3.75C18.0302 3.75 19.3178 4.28337 20.2672 5.23277C21.2166 6.18217 21.75 7.46984 21.75 8.8125C21.75 15 12 20.25 12 20.25Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</g>
+											<defs>
+												<clipPath id="clip0_231_34377">
+													<rect width="24" height="24" rx="4" fill="white"/>
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
 								</div>
 							</div>
-							<div class="header__item">
+							<div class="header__item header__item-cart">
 								<div class="header__item-icon">
-									<img src="img/cart.svg" alt="">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M19.8074 20.3571H4.65742C4.47288 20.3563 4.29496 20.2882 4.15693 20.1657C4.0189 20.0432 3.93021 19.8747 3.90742 19.6915L2.57617 7.69151C2.56433 7.58696 2.57463 7.48108 2.60639 7.38077C2.63814 7.28045 2.69065 7.18794 2.76051 7.10924C2.83036 7.03055 2.91599 6.96743 3.01183 6.924C3.10767 6.88057 3.21158 6.85779 3.3168 6.85714H21.148C21.2533 6.85779 21.3572 6.88057 21.453 6.924C21.5489 6.96743 21.6345 7.03055 21.7043 7.10924C21.7742 7.18794 21.8267 7.28045 21.8585 7.38077C21.8902 7.48108 21.9005 7.58696 21.8887 7.69151L20.5574 19.6915C20.5346 19.8747 20.4459 20.0432 20.3079 20.1657C20.1699 20.2882 19.992 20.3563 19.8074 20.3571Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
 								</div>
-								<div class="header__item-link">
-									<a href="#">Корзина</a>
-								</div>
+								<div class="header__item-count">2</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-mob">
+			<div class="menu-mob__top">
+				<div class="menu-mob__logo">
+					<a href="#"><img src="img/logo.svg" alt="alt"></a>
+				</div>
+				<div class="menu-mob__city">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+					<path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="#585858" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M13 6.5C13 11 8 14.5 8 14.5C8 14.5 3 11 3 6.5C3 5.17392 3.52678 3.90215 4.46447 2.96447C5.40215 2.02678 6.67392 1.5 8 1.5C9.32608 1.5 10.5979 2.02678 11.5355 2.96447C12.4732 3.90215 13 5.17392 13 6.5Z" stroke="#585858" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<a data-fancybox="" href="#popup-city">Москва</a>
+				</div>
+				<div class="menu-mob__close">
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M18.75 5.25L5.25 18.75" stroke="#0C674B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M18.75 18.75L5.25 5.25" stroke="#0C674B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<ul class="menu-mob__list">
+				<li class="menu-mob__item phone">
+					<a href="tel:+7-800-500-06-06">+7-800-500-06-06</a>
+					<p>Пн-Пт 09:00-18:00</p>
+				</li>
+				<input type="checkbox" id="mob-dropdown-1">
+				<li class="menu-mob__item mob-dropdown">
+					<label class="menu-mob__link" for="mob-dropdown-1">Каталог</label>
+					<ul class="menu-mob__list">
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Категории материалов</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Готовые системы</a>
+						</li>
+					</ul>
+				</li>
+				<li class="menu-mob__item">
+					<a href="#" class="menu-mob__link">Акции</a>
+				</li>
+				<li class="menu-mob__item">
+					<a href="#" class="menu-mob__link">Оплата и доставка</a>
+				</li>
+				<li class="menu-mob__item">
+					<a href="#" class="menu-mob__link">Рекламация</a>
+				</li>
+				<input type="checkbox" id="mob-dropdown-2">
+				<li class="menu-mob__item mob-dropdown">
+					<label class="menu-mob__link" for="mob-dropdown-2">О компании</label>
+					<ul class="menu-mob__list">
+						<li class="menu-mob__item">
+							<a href="about.html" class="menu-mob__link">О компании</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="blog.html" class="menu-mob__link">Блог</a>
+						</li>
+						<li class="menu-mob__item">
+							<a href="#" class="menu-mob__link">Контакты</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="menu-mob__bottom">
+				<div class="mob-bottom__btn">
+					<a href="compare-no.html">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g clip-path="url(#clip0_77_2693)">
+								<rect width="24" height="24" rx="4" fill="white"/>
+								<path d="M11.7858 3.42857V21.1978" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M9.36243 21.1978H14.2086" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4.51611 8.27473L19.0546 5.04396" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M1.28577 16.3517C1.28577 18.1357 3.305 18.7747 4.51654 18.7747C5.72807 18.7747 7.74731 18.1357 7.74731 16.3517L4.51654 8.27475L1.28577 16.3517Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.8245 13.1209C15.8245 14.9049 17.8437 15.544 19.0552 15.544C20.2668 15.544 22.286 14.9049 22.286 13.1209L19.0552 5.04396L15.8245 13.1209Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_77_2693">
+									<rect width="24" height="24" rx="4" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+						<span>Сравнение</span>
+					</a>
+				</div>
+				<div class="mob-bottom__btn">
+					<a href="favotite-no.html">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<g clip-path="url(#clip0_231_34377)">
+								<rect width="24" height="24" rx="4" fill="white"/>
+								<path d="M12 20.25C12 20.25 2.25 15 2.25 8.8125C2.25 7.46984 2.78337 6.18217 3.73277 5.23277C4.68217 4.28337 5.96984 3.75 7.3125 3.75C9.43031 3.75 11.2444 4.90406 12 6.75C12.7556 4.90406 14.5697 3.75 16.6875 3.75C18.0302 3.75 19.3178 4.28337 20.2672 5.23277C21.2166 6.18217 21.75 7.46984 21.75 8.8125C21.75 15 12 20.25 12 20.25Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							<defs>
+								<clipPath id="clip0_231_34377">
+									<rect width="24" height="24" rx="4" fill="white"/>
+								</clipPath>
+							</defs>
+						</svg>
+						<span>Избранное</span>
+					</a>
+				</div>
+				<div class="mob-bottom__btn">
+					<a href="cart-no.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+					<path d="M23.1087 23.75H5.43368C5.21838 23.749 5.01081 23.6696 4.84977 23.5267C4.68874 23.3838 4.58526 23.1871 4.55868 22.9734L3.00556 8.97344C2.99174 8.85146 3.00375 8.72793 3.0408 8.6109C3.07785 8.49386 3.13912 8.38593 3.22061 8.29412C3.30211 8.20231 3.40201 8.12868 3.51382 8.078C3.62563 8.02733 3.74686 8.00075 3.86962 8H24.6727C24.7955 8.00075 24.9167 8.02733 25.0285 8.078C25.1404 8.12868 25.2403 8.20231 25.3218 8.29412C25.4032 8.38593 25.4645 8.49386 25.5016 8.6109C25.5386 8.72793 25.5506 8.85146 25.5368 8.97344L23.9837 22.9734C23.9571 23.1871 23.8536 23.3838 23.6926 23.5267C23.5316 23.6696 23.324 23.749 23.1087 23.75Z" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M9.625 7.875C9.625 6.71468 10.0859 5.60188 10.9064 4.78141C11.7269 3.96094 12.8397 3.5 14 3.5C15.1603 3.5 16.2731 3.96094 17.0936 4.78141C17.9141 5.60188 18.375 6.71468 18.375 7.875" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg><span>Корзина</span></a>
+				</div>
+				<div class="mob-bottom__btn">
+					<a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+					<path d="M14 17.5C17.866 17.5 21 14.366 21 10.5C21 6.63401 17.866 3.5 14 3.5C10.134 3.5 7 6.63401 7 10.5C7 14.366 10.134 17.5 14 17.5Z" stroke="#585858" stroke-width="1.5" stroke-miterlimit="10"/>
+					<path d="M3.39062 23.625C4.46571 21.7625 6.01216 20.2158 7.87451 19.1405C9.73686 18.0652 11.8495 17.499 14 17.499C16.1505 17.499 18.2631 18.0652 20.1255 19.1405C21.9878 20.2158 23.5343 21.7625 24.6094 23.625" stroke="#585858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg><span>Профиль</span></a>
 				</div>
 			</div>
 		</div>
@@ -157,31 +278,127 @@
 						                </ul>
 									</div>
 									<div class="catalog-menu__info">
-										<div class="catalogm-menu__one">
-					                        <div class="catalogm-menu__one-title">
-					                            Материалы
-					                        </div>
-					                        <ul class="catalogm-menu__list">  	  
-					                            <li class="catalogm-menu__item">
-					                                <a href="#" class="catalogm-menu__link">Смеси для пола</a>
-					                            </li>
-					                            <li class="catalogm-menu__item">
-					                                <a href="#" class="catalogm-menu__link">Затирки и расшивки</a>
-					                            </li>
-					                            <li class="catalogm-menu__item">
-					                                <a href="#" class="catalogm-menu__link">Монтажные клеи</a>
-					                            </li>
-					                            <li class="catalogm-menu__item">
-					                                <a href="#" class="catalogm-menu__link">Смеси для брусчатки</a>
-					                            </li>
-					                            <li class="catalogm-menu__item">
-					                                <a href="#" class="catalogm-menu__link">Подливочные составы</a>
-					                            </li>
-					                            <li class="catalogm-menu__item">
-					                                <a href="#" class="catalogm-menu__link">Смеси для печей и каминов</a>
-					                            </li>
-					                        </ul>
+										<div class="catalog-menu__info-list">
+						                    <div class="catalogm-menu__one">
+						                        <div class="catalogm-menu__one-title">
+						                            Материалы
+						                        </div>
+						                        <ul class="catalogm-menu__list">
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Смеси для пола</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Затирки и расшивки</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Монтажные клеи</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Смеси для брусчатки</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Подливочные составы</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Смеси для печей и каминов</a>
+						                            </li>
+						                        </ul>
+						                    </div>
+						                    <div class="catalogm-menu__one">
+						                        <div class="catalogm-menu__one-title">
+						                            Материалы
+						                        </div>
+						                        <ul class="catalogm-menu__list">
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Штукатурки</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Декоративные штукатурки</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Гидроизоляция</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Универсальные смеси</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Промышленные полы</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Краски</a>
+						                            </li>
+						                        </ul>
+						                    </div>
+						                    <div class="catalogm-menu__one">
+						                        <div class="catalogm-menu__one-title">
+						                            Материалы
+						                        </div>
+						                        <ul class="catalogm-menu__list">
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Шпаклевки</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Смеси для теплоизоляции</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Специальные растворы</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Песок</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Ремонтный состав</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Уход</a>
+						                            </li>
+						                        </ul>
+						                    </div>
+						                    <div class="catalogm-menu__one">
+						                        <div class="catalogm-menu__one-title">
+						                            Материалы
+						                        </div>
+						                        <ul class="catalogm-menu__list">
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Плиточный клей</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Кладочные растворы</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Грунты</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Пескобетон М300</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Добавки в растворы</a>
+						                            </li>
+						                            <li class="catalogm-menu__item">
+						                                <a href="#" class="catalogm-menu__link">Основит PRO</a>
+						                            </li>
+						                        </ul>
+						                    </div>
 					                    </div>
+
+										<div class="catalog-menu__info-brend">
+											<div class="menu__info-brend">Бренды</div>
+											<div class="brend-list">
+												<div class="brend-item">
+													<img src="img/brend1.png" alt="brend">
+												</div>
+												<div class="brend-item">
+													<img src="img/brend2.png" alt="brend">
+												</div>
+												<div class="brend-item">
+													<img src="img/brend3.png" alt="brend">
+												</div>
+												<div class="brend-item">
+													<img src="img/brend4.png" alt="brend">
+												</div>
+											</div>
+										</div>
+
 									</div>
 								</div>
 							</div>
@@ -213,7 +430,7 @@
 					</li>
 				</ul>
 			</div>
-		</div>	
+		</div>
 	</header>
 	<section class="breadcrumbs">
 		<div class="container">
@@ -227,22 +444,14 @@
 	</section>
 	<section class="error-page">
 		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="section__title">
-						<h1>Избранное</h1>
-					</div>
-				</div>
+			<div class="section__title">
+				<h1>Избранное</h1>
 			</div>
-			<div class="row">
-				<div class="col-7">
-					<div class="error-search">
-						<p>Вы не добавили товары в избранное.</p>
-						<p>Чтобы добавить товары в избранное, перейдите в каталог.</p>
-						<div class="error-back">
-							<a href="#">Перейти в каталог</a>
-						</div>
-					</div>
+			<div class="error-search">
+				<p>Вы не добавили товары в избранное.</p>
+				<p>Чтобы добавить товары в избранное, перейдите в каталог.</p>
+				<div class="error-back">
+					<a href="#">Перейти в каталог</a>
 				</div>
 			</div>
 		</div>
@@ -250,9 +459,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
+				<div class="col-xl-3 col-md-4 col-sm-4 col-6">
 					<div class="footer__logo">
-						<a href="#"><img src="img/logo-f.svg" alt="alt"></a>
+						<a href="index.html"><img src="img/logo-f.svg" alt="alt"></a>
 					</div>
 					<div class="footer__info">
 						<p>ООО «Седрус»</p>
@@ -261,15 +470,33 @@
 						<p>ОГРН 5087746325960</p>
 					</div>
 				</div>
-				<div class="col-2">
+				<div class="col-xl-2 col-md-4 col-sm-4 col-6 d-none d-sm-block">
 					<div class="footer__menu-block">
-					<span>Покупателям</span>
+					<span>Каталог</span>
 					<ul class="footer__menu">
 						<li class="footer__menu-item">
 							<a href="#" class="footer__menu-link">Категории товаров</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Готовые решения</a>
+							<a href="#" class="footer__menu-link">Готовые системы</a>
+						</li>
+					</ul>
+					</div>
+					<div class="footer__menu-block">
+					<span>Услуги</span>
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<a href="#" class="footer__menu-link">Рекламация</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+				<div class="col-xl-2 col-md-4 col-sm-4 col-6 d-none d-sm-block">
+					<div class="footer__menu-block">
+					<span>Покупателям</span>
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<a href="#" class="footer__menu-link">Акции</a>
 						</li>
 						<li class="footer__menu-item">
 							<a href="#" class="footer__menu-link">Оплата и доставка</a>
@@ -283,33 +510,7 @@
 					</ul>
 					</div>
 				</div>
-				<div class="col-2">
-					<div class="footer__menu-block">
-					<span>Партнерам</span>
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Оптовые поставки</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Франшиза</a>
-						</li>
-					</ul>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="footer__menu-block">
-					<span>Услуги</span>
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Консультация</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Рекламация</a>
-						</li>
-					</ul>
-					</div>
-				</div>
-				<div class="col-2">
+				<div class="col-xl-2 col-md-4 col-sm-4 col-6 d-none d-sm-block">
 					<div class="footer__menu-block">
 					<span>Компания</span>
 					<ul class="footer__menu">
@@ -317,13 +518,7 @@
 							<a href="#" class="footer__menu-link">О компании</a>
 						</li>
 						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Новости</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Технические свидетельства</a>
-						</li>
-						<li class="footer__menu-item">
-							<a href="#" class="footer__menu-link">Акции</a>
+							<a href="#" class="footer__menu-link">Блог</a>
 						</li>
 						<li class="footer__menu-item">
 							<a href="#" class="footer__menu-link">Контакты</a>
@@ -331,7 +526,7 @@
 					</ul>
 					</div>
 				</div>
-				<div class="col-2">
+				<div class="col-xl-3 col-md-4 col-sm-4 col-6">
 					<div class="footer__menu-block">
 					<span>Контакты</span>
 						<div class="footer__info-block">
@@ -363,17 +558,17 @@
 		<div class="container">
 			<div class="footer__bottom">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="footer__bottom-link text-left">
 							<a href="#">Copyright 2023</a>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="footer__bottom-link text-center">
 							<a href="#">Договор публичной оферты</a>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-12 col-md-4">
 						<div class="footer__bottom-link text-right">
 							<a href="#">Политика конфиденциальности</a>
 						</div>
@@ -392,6 +587,6 @@
 	<!-- Swiper JS -->
 	<script src="libs/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
-	
+
 </body>
 </html>

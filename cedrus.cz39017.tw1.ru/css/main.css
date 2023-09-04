@@ -2158,42 +2158,7 @@ body{
 .auth-form .btn-form:hover {
 	background: var(--green-dark, #034430);
 }
-.form .form-label {
-	margin-bottom: 4px;
-}
-.form .form-control {
-	height: 42px;
-	border-color: var(--gray-light, #DADADA);
-	color: var(--gray, #585858);
-	padding: 10px;
-}
-.form .form-check-input {
-	transition: all .3s ease;
-}
-.form .form-check,
-.form .form-check-label {
-	cursor: pointer;
-}
-.form .form-check:hover .form-check-input {
-	border-color: #0C674B;
-}
-.form .form-link {
-	text-align: right;
-} 
-.form .form-link a {
-	color: var(--black, #111);
-}
-.icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
-}
-.icon-EyeSlash {
-	width: 1.0361328125em;
-}
+
 /*footer*/
 .footer {
 	background: #111111;

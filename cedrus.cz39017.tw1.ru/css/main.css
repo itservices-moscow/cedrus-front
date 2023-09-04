@@ -1191,9 +1191,6 @@ body{
 .product-item__one a:hover {
 	color: #034430;
 }
-.items {
-	padding-bottom: 70px;
-}
 .index__items {
 	border: 1px solid #DADADA;
 	border-radius: 4px;
@@ -1252,7 +1249,7 @@ body{
 	border-radius: 4px;
 	height: 436px;
 	padding: 70px 60px;
-	margin-bottom: 70px;
+	margin-bottom: 140px;
 }
 .banner__title {
 	font-style: normal;
@@ -3678,6 +3675,7 @@ input:not(:checked) ~ .solution-composition__product {
 		height: auto;
 		background: #FFFFFF;
 		padding: 40px;
+		margin-bottom: 120px;
 	}
 	.banner__title {
 		font-size: 32px;
@@ -3902,6 +3900,7 @@ input:not(:checked) ~ .solution-composition__product {
 	}
 	.banner {
 		padding: 16px;
+		margin-bottom: 80px;
 	}
 	.banner__title {
 		font-weight: 500;

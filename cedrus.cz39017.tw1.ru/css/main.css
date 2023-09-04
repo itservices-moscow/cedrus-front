@@ -2125,6 +2125,7 @@ body{
 	font-size: 16px;
 	line-height: 140%;
 	color: #585858;
+	margin: 0;
 }
 .auth-form form a {
 	font-style: normal;
@@ -2140,7 +2141,7 @@ body{
 	background: #0C674B;
 	border-radius: 4px;
 	color: #FFFFFF;
-	margin-top: 56px;
+	margin-top: 40px;
 	margin-bottom: 24px;
 	transition: all .3s ease;
 }
@@ -3749,6 +3750,9 @@ input[type=range]::-ms-thumb {
 	.error-back a {
 		width: 100%;
 	}
+	.auth-form .btn-form {
+		margin-top: 40px;
+	}
 }
 @media (max-width:580px) {
 	.menu-mob__item {
@@ -4049,5 +4053,11 @@ input[type=range]::-ms-thumb {
 		width: 60px;
 		height: 60px;
 		padding: 6px;
+	}
+	.auth-form {
+		padding: 20px 20px 40px;
+	}
+	.auth-form h1 {
+		font-size: 32px;
 	}
 }

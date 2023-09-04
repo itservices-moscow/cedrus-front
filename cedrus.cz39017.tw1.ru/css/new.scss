@@ -3,6 +3,11 @@
         margin-bottom: 4px;
     }
 
+    &-field {
+        position: relative;
+        margin-bottom: 32px;
+    }
+
     &-control {
         height: 42px;
         border-color: var(--gray-light, #DADADA);
@@ -25,7 +30,7 @@
 
     &-link {
         text-align: right;
-        
+
         a {
             color: var(--black, #111);
         }
@@ -34,13 +39,14 @@
     &-password-btn {
         position: absolute;
         right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 44px;
-        height: 44px;
+        bottom: 0;
+        width: 42px;
+        height: 42px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: none;
+        background: none;
     }
 }
 
@@ -51,6 +57,10 @@
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+
+    &-eye {
+        display: none;
+    }
 
     &-EyeSlash {
         width: 1.0361328125em;

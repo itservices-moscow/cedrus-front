@@ -1466,7 +1466,7 @@ body{
 	color: var(--black, #111);
 }
 .about {
-	padding: 70px 0px 140px 0px;
+	margin-bottom: 140px;
 }
 .about__benefits {
 	margin-bottom: 140px;
@@ -2127,7 +2127,7 @@ body{
 	color: #585858;
 	margin: 0;
 }
-.auth-form form a {
+.form a {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -2135,16 +2135,19 @@ body{
 	text-decoration: none;
 	color: #0C674B;
 }
-.auth-form .btn-form {
-	width: 100%;
+.form .btn-form {
 	height: 42px;
 	background: #0C674B;
 	border-radius: 4px;
 	color: #FFFFFF;
 	margin-top: 56px;
 	transition: all .3s ease;
+	padding: 0 32px;
 }
-.auth-form .btn-form:hover {
+.auth-form .btn-form {
+	width: 100%;
+}
+.form .btn-form:hover {
 	background: var(--green-dark, #034430);
 }
 
@@ -2637,7 +2640,7 @@ input[type=range]::-ms-thumb {
 	flex-wrap: wrap;
 	margin-top: 8px;
 }
-.solution__block-title h1 {
+.page-title h1 {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 52px;
@@ -3489,7 +3492,7 @@ input:not(:checked) ~ .solution-composition__product {
 		margin-right: 6px;
 	}
 	.about {
-		padding: 50px 0px 120px 0px;
+		margin-bottom: 120px;
 	}
 	.about__title {
 		font-size: 32px;
@@ -3785,7 +3788,7 @@ input:not(:checked) ~ .solution-composition__product {
 	.pitem {
 		margin-bottom: 120px;
 	}
-	.solution__block-title h1 {
+	.page-title h1 {
 		font-size: 42px;
 	}
 	.solution__block-btn a {
@@ -3822,8 +3825,8 @@ input:not(:checked) ~ .solution-composition__product {
 	.error-back a {
 		width: 100%;
 	}
-	.auth-form .btn-form {
-		margin-top: 40px;
+	.form .btn-form {
+		width: 100%;
 	}
 }
 @media (max-width:580px) {
@@ -3918,7 +3921,7 @@ input:not(:checked) ~ .solution-composition__product {
 		width: 100%;
 	}
 	.about {
-		padding: 30px 0px 80px 0px;
+		margin-bottom: 80px;
 	}
 	.about__title {
 		font-weight: 500;
@@ -4095,7 +4098,7 @@ input:not(:checked) ~ .solution-composition__product {
 	.pitem {
 		margin-bottom: 80px;
 	}
-	.solution__block-title h1 {
+	.page-title h1 {
 		font-size: 32px;
 	}
 	.solution-item {

@@ -468,27 +468,35 @@
 					<div class="section__title">
 						<h2>Контактная информация и причина обращения</h2>
 					</div>
-					<form action="#" class="form">
+					<form action="#">
 						<div class="row">
 							<div class="col-xl-6 mb-4">
 								<label class="form-label">Кто вы?</label>
-								<select class="form-select">
-									<option>Выберите</option>
-									<option>Физическое лицо</option>
-									<option>Юридическое лицо</option>
-									<option>Бригадир</option>
-								</select>
+								<div class="dropdown">
+									<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+										<span>Выберите</span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+										<li><button class="dropdown-item" type="button">Физическое лицо</button></li>
+										<li><button class="dropdown-item" type="button">Юридическое лицо</button></li>
+										<li><button class="dropdown-item" type="button">Бригадир</button></li>
+									</ul>
+								</div>
 							</div>
 							<div class="col-xl-6 mb-4">
 								<label class="form-label">Причина обращения</label>
-								<select class="form-select">
-									<option>Выберите</option>
-									<option>Технический брак</option>
-									<option>Недовоз, излишек, пересорт</option>
-									<option>Нарушение товарного вида (механические повреждения)</option>
-									<option>Жалоба на торгового представителя</option>
-									<option>Брак с ущербом</option>
-								</select>
+								<div class="dropdown">
+									<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+										<span>Выберите</span>
+									</button>
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+										<li><button class="dropdown-item" type="button">Технический брак</button></li>
+										<li><button class="dropdown-item" type="button">Недовоз, излишек, пересорт</button></li>
+										<li><button class="dropdown-item" type="button">Нарушение товарного вида (механические повреждения)</button></li>
+										<li><button class="dropdown-item" type="button">Жалоба на торгового представителя</button></li>
+										<li><button class="dropdown-item" type="button">Брак с ущербом</button></li>
+									</ul>
+								</div>
 							</div>
 							<div class="mb-4">
 								<label class="form-label">Подробно опишите проблему</label>

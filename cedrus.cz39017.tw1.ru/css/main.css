@@ -84,7 +84,7 @@ body{
 .top__menu-link:hover {
 	color: #111111;
 }
-.dropdown-menu {
+.top__menu .dropdown-menu {
 	position: absolute;
 	left: 0;
 	z-index: 99;
@@ -115,11 +115,11 @@ body{
 .dropdown-menu__link:hover {
 	color: #0C674B;
 }
-.dropdown {
+.top__menu .dropdown {
 	position: relative;
 	margin-right: 26px;
 }
-.dropdown::before {
+.top__menu .dropdown::before {
 	content: '';
 	position: absolute;
 	right: -15px;
@@ -130,7 +130,7 @@ body{
 	width: 10px;
 	height: 10px;
 }
-.dropdown:hover .dropdown-menu {
+.top__menu .dropdown:hover .dropdown-menu {
 	visibility: visible;
 }
 .header__auth {
@@ -2127,7 +2127,7 @@ body{
 	color: #585858;
 	margin: 0;
 }
-.form a {
+form a {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -2135,7 +2135,33 @@ body{
 	text-decoration: none;
 	color: #0C674B;
 }
-.form .btn-form {
+.dropdown-toggle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+	border: 1px solid #DADADA;
+	color: #585858;
+}
+.dropdown-toggle span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.dropdown-toggle,
+.dropdown-menu {
+	width: 100%;
+}
+.dropdown-item {
+	white-space: normal;
+	line-height: 140%;
+}
+.form-control:focus,
+.dropdown-toggle:focus,
+.dropdown-menu {
+	border-color: #0C674B;
+	box-shadow: none;
+}
+.btn-form {
 	height: 42px;
 	background: #0C674B;
 	border-radius: 4px;
@@ -2147,8 +2173,9 @@ body{
 .auth-form .btn-form {
 	width: 100%;
 }
-.form .btn-form:hover {
+.btn-form:hover {
 	background: var(--green-dark, #034430);
+	color: #FFFFFF;
 }
 
 /*footer*/

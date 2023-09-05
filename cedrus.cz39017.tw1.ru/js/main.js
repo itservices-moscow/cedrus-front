@@ -55,4 +55,18 @@ $(document).ready(function () {
             $(this).removeClass('slash')
         }
     });
+
+    $('.dropdown-item').on('click', function () {
+        $(this).closest('.dropdown').find('.dropdown-toggle span').text($(this).text());
+    });
+
+    // telephone mask
+    $('input[type=tel]').on('input', function() {
+        this.value = this.value
+            .replace(/(\+7|\D)/g, '')
+            .replace(/(\d{0,10})\d*/, '+7 ($1')
+            .replace(/(\d{3})(\d)/, '$1) $2')
+            .replace(/(\d{3})(\d)/, '$1-$2')
+            .replace(/(-\d{2})(\d)/, '$1-$2');
+    });
 });

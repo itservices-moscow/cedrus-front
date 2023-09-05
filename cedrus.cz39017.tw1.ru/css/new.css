@@ -1,9 +1,21 @@
+.form a {
+  transition: all 0.3s ease;
+}
+.form-link {
+  color: var(--black, #111);
+}
+.form-link a {
+  color: inherit;
+}
 .form-label {
   margin-bottom: 4px;
 }
 .form-field {
   position: relative;
   margin-bottom: 32px;
+}
+.form-field:last-of-type {
+  margin-bottom: 0;
 }
 .form-control {
   height: 42px;
@@ -38,6 +50,55 @@
   border: none;
   background: none;
 }
+.form-text {
+  margin-top: 24px;
+}
+.form-password {
+  position: relative;
+}
+.form-password-btn {
+  background: inherit;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  color: var(--gray, #585858);
+  transition: all 0.3s ease;
+}
+.form-password-btn:hover {
+  color: var(--green, #0C674B);
+}
+.form-password-btn .icon-eye-slash {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.form-password-btn.slash .icon-eye {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.form-password-btn.slash .icon-eye-slash {
+  opacity: 1;
+  visibility: visible;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .auth-form-wrap {
+    max-width: 725px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .auth-form {
+    margin-bottom: 120px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .auth-form {
+    margin-bottom: 50px;
+  }
+}
 
 .icon {
   display: inline-block;
@@ -47,9 +108,13 @@
   stroke: currentColor;
   fill: currentColor;
 }
-.icon-eye {
-  display: none;
-}
-.icon-EyeSlash {
+.icon-eye-slash {
   width: 1.0361328125em;
+}
+
+.auth-form form .form-link a {
+  color: var(--black, #111);
+}
+.auth-form form .form-link a:hover {
+  color: var(--green, #0C674B);
 }/*# sourceMappingURL=new.css.map */

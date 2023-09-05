@@ -43,4 +43,16 @@ $(document).ready(function () {
             link.text(originalText);
         }
     });
+
+    $('body').on('click', '.form-password-btn', function () {
+        var passwordInput = $(this).prev('.form-control');
+
+        if (passwordInput.attr('type') === 'password') {
+            passwordInput.attr('type', 'text');
+            $(this).addClass('slash')
+        } else {
+            passwordInput.attr('type', 'password');
+            $(this).removeClass('slash')
+        }
+    });
 });

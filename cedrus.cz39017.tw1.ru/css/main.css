@@ -3167,6 +3167,9 @@ td {
 .stock-item__other-link a:hover {
 	color: #034430;
 }
+.stock-detail {
+	margin-bottom: 56px;
+}
 .stock-detail__content img{
 	width: 100%;
 	border-radius: 4px;
@@ -3896,6 +3899,9 @@ td {
 	}
 	.article-slider {
 		margin-bottom: 120px;
+	}
+	.stock-detail {
+		margin-bottom: 40px;
 	}
 }
 @media (max-width:580px) {

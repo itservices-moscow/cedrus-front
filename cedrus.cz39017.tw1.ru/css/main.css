@@ -2063,13 +2063,13 @@ body{
 	margin-bottom: 70px;
 	position: relative;
 }
-.slider-product .hit-swiper {
+.hit-swiper {
 	width: 100%;
 	position: relative;
 	padding-top: 80px;
 	margin-top: -80px;
 }
-.slider-product .hit-swiper .swiper_nav {
+.hit-swiper .swiper_nav {
 	top: 0px;
 	background: rgba(255, 255, 255, 0.1);
 	z-index: 999;
@@ -2078,10 +2078,10 @@ body{
 	border-radius: 8px;
 	right: 0px;
 }
-.slider-product .hit-swiper .swiper_nav .swiper-pagination {
+.hit-swiper .swiper_nav .swiper-pagination {
 	color: #111111;
 }
-.slider-product .hit-swiper .swiper_nav .swiper-button-prev {
+.hit-swiper .swiper_nav .swiper-button-prev {
 	background: url('../img/prev-p.svg');
 	background-repeat: no-repeat;
 	width: 20px;
@@ -2090,7 +2090,7 @@ body{
 	z-index: 9;
 	top: 30px;
 }
-.slider-product .hit-swiper .swiper_nav .swiper-button-next {
+.hit-swiper .swiper_nav .swiper-button-next {
 	background: url('../img/next-p.svg');
 	background-repeat: no-repeat;
 	width: 20px;
@@ -3121,12 +3121,13 @@ td {
 .stock-list {
 	display: flex;
 	flex-direction: column;
+	border-bottom: 1px solid #DADADA;
 }
 .stock-item__other {
 	display: flex;
 	flex-direction: row;
-	border-bottom: 1px solid #DADADA;
-	padding: 20px 0px;
+	border-top: 1px solid #DADADA;
+	padding: 16px 0px;
 }
 .stock-item__other-img {
 	width: 50%;
@@ -3135,6 +3136,8 @@ td {
 .stock-item__other-img img {
 	max-width: 100%;
 	height: 130px;
+	border-radius: 4px;
+	object-fit: cover;
 }
 .stock-item__other-right {
 	width: 50%;
@@ -3165,6 +3168,8 @@ td {
 	color: #034430;
 }
 .stock-detail__content img{
+	width: 100%;
+	border-radius: 4px;
 	margin-bottom: 20px;
 }
 .stock-detail__content ul {
@@ -3889,6 +3894,9 @@ td {
 	td {
 		padding: 16px 8px;
 	}
+	.article-slider {
+		margin-bottom: 120px;
+	}
 }
 @media (max-width:580px) {
 	.menu-mob__item {
@@ -4085,7 +4093,7 @@ td {
 		margin-top: 40px;
 		margin-bottom: 70px;
 	}
-	.slider-product .hit-swiper {
+	.hit-swiper {
 		padding-bottom: 60px;
 	}
 	.card-tabs .nav-tabs {
@@ -4112,7 +4120,7 @@ td {
 	.mySwiperCat {
 		padding-bottom: 70px;
 	}
-	.slider-product .hit-swiper .swiper_nav,
+	.hit-swiper .swiper_nav,
 	.mySwiperCat .swiper_nav {
 		top: auto;
 	}
@@ -4214,5 +4222,12 @@ td {
 	.table-delivery th,
 	.table-delivery td {
 		padding: 8px;
+	}
+	.stock-detail__content img {
+		height: 200px;
+		object-fit: cover;
+	}
+	.article-slider {
+		margin-bottom: 80px;
 	}
 }

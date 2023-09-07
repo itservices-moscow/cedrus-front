@@ -3212,6 +3212,9 @@ td {
 	align-items: center;
 	color: #585858;
 }
+.stock-detail__content-heading {
+	margin-top: 40px;
+}
 .stock-detail__repost a svg {
 	margin-left: 10px;
 }
@@ -3874,6 +3877,9 @@ td {
 	.stock-item__date p {
 		font-size: 14px;
 	}
+	.stock-detail__repost {
+		margin-bottom: 120px;
+	}
 	.about__image img {
 		margin-bottom: 20px;
 	}
@@ -4100,7 +4106,7 @@ td {
 		margin-bottom: 70px;
 	}
 	.hit-swiper {
-		padding-bottom: 60px;
+		padding-bottom: 40px;
 	}
 	.card-tabs .nav-tabs {
 		flex-wrap: nowrap;
@@ -4232,6 +4238,9 @@ td {
 	.stock-detail__content img {
 		height: 200px;
 		object-fit: cover;
+	}
+	.stock-detail__repost {
+		margin-bottom: 80px;
 	}
 	.article-slider {
 		margin-bottom: 80px;

@@ -69,4 +69,9 @@ $(document).ready(function () {
             .replace(/(\d{3})(\d)/, '$1-$2')
             .replace(/(-\d{2})(\d)/, '$1-$2');
     });
+
+    $('.contact-places__btn').on('click', function() {
+        var list = $(this).siblings('.contact-places__list')[0];
+        list.scrollBy({left: list.offsetWidth});
+    })
 });

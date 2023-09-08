@@ -3146,6 +3146,7 @@ tbody tr {
 th {
 	min-width: 200px;
 	padding: 24px 8px;
+	vertical-align: top;
 }
 td {
 	padding: 24px 16px;

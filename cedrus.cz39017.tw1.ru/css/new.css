@@ -83,6 +83,88 @@
   font-size: 16px;
 }
 
+.auth-nav {
+  display: flex;
+  align-items: center;
+  margin: 60px 0 -61px 0;
+}
+.auth-nav-link {
+  border-bottom: 1px solid var(--green, #0C674B);
+  background: var(--gray-light-2, #F0F0F0);
+  height: 44px;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: var(--gray, #585858);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  flex: 1;
+  border-top: 1px solid var(--gray-light-2, #F0F0F0);
+  border-right: 1px solid var(--gray-light-2, #F0F0F0);
+  border-left: 1px solid var(--gray-light-2, #F0F0F0);
+}
+.auth-nav-link:first-child {
+  border-radius: 4px 0 0;
+}
+.auth-nav-link:last-child {
+  border-radius: 0 4px 0 0;
+}
+.auth-nav-link:hover, .auth-nav-link.active {
+  background: var(--white, #FFF);
+  color: var(--black, #111);
+  border-color: var(--green, #0C674B);
+  border-bottom-color: var(--white, #FFF);
+}
+.auth-nav-step {
+  display: flex;
+  counter-reset: steps;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 37px;
+}
+.auth-nav-step-item {
+  color: var(--black, #111);
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  padding: 48px 32px 0;
+  flex: 1;
+}
+.auth-nav-step-item::before {
+  counter-increment: steps;
+  content: counter(steps);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black, #111);
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid var(--gray-light, #DADADA);
+  border-radius: 50%;
+}
+.auth-nav-step-item.active::before {
+  background: var(--green, #0C674B);
+  color: var(--white, #FFF);
+  border-color: var(--green, #0C674B);
+}
+.auth-nav-step-item:not(:first-child):after {
+  content: "";
+  position: absolute;
+  right: calc(50% + 4px + 1rem);
+  top: 16px;
+  width: calc(100% - 8px - 2rem);
+  height: 1px;
+  background-color: #DADADA;
+}
+
 @media screen and (min-width: 768px) {
   .auth-form-wrap {
     max-width: 725px;

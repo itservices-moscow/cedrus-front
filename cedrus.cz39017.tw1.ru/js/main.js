@@ -73,5 +73,10 @@ $(document).ready(function () {
     $('.contact-places__btn').on('click', function() {
         var list = $(this).siblings('.contact-places__list')[0];
         list.scrollBy({left: list.offsetWidth});
-    })
+    });
+
+    $('.user-nav-item-dropdown .user-nav-link').on('click', function() {
+        $(this).parents('.user-nav-item-dropdown').toggleClass('open');
+        return false;
+    });
 });

@@ -107,6 +107,16 @@
             }
         }
     }
+
+    &-notification {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    &-success {
+        border-color: var(--green, #0C674B);
+    }
 }
 
 .auth {
@@ -244,11 +254,17 @@
 }
 
 .user {
+    $block: &;
+
     padding: 60px 0 140px;
     display: flex;
     align-items: flex-start;
     gap: 30px;
     background: var(--gray-light-2, #F0F0F0);
+
+    img {
+        max-width: 100%;
+    }
 
     &-nav {
         flex: 0 0 auto;
@@ -258,12 +274,172 @@
         background: var(--white, #FFF);
         position: sticky;
         top: 30px;
+
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            padding: 0 24px;
+        }
+
+        &-list {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        &-item {
+            position: relative;
+
+            &.active {
+                #{$block}-nav-link {
+                    border-color: var(--green, #0C674B);
+                    background: var(--green-light, #DDFFEB);
+                }
+            }
+
+            &:last-child {
+                margin-top: 24px;
+            }
+
+            &-dropdown {
+                &.open {
+                    #{$block}-nav-dropdown-wrap {
+                        grid-template-rows: 1fr;
+                    }
+
+                    .icon-caret_up {
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        &-link {
+            display: flex;
+            padding: 12px 12px 12px 24px;
+            min-height: 52px;
+            align-items: center;
+            gap: 16px;
+            position: relative;
+            color: var(--black, #111);
+            text-decoration: none;
+            border-left: 1px solid transparent;
+            transition: all .3s ease;
+
+            &:hover {
+                color: var(--black, #111);
+                border-color: var(--green, #0C674B);
+                background: var(--green-light, #DDFFEB);
+            }
+
+            .icon {
+                font-size: 22px;
+            }
+
+            .icon-caret_up {
+                position: absolute;
+                right: 12px;
+                top: 50%;
+                transform: translateY(-50%) rotate(180deg);
+                font-size: 20px;
+                transition: all .3s ease;
+            }
+        }
+
+        &-dropdown {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            overflow: hidden;
+
+            &-wrap {
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows .3s;
+            }
+
+            &-item {
+                &.active {
+                    #{$block}-nav-dropdown-link {
+                        border-color: var(--green, #0C674B);
+                        background: var(--green-light, #DDFFEB);
+                    }
+                }   
+            }
+
+            &-link {
+                min-height: 46px;
+                display: flex;
+                padding: 12px 0px 12px 64px;
+                color: var(--black, #111);
+                text-decoration: none;
+                border-left: 1px solid transparent;
+                transition: all .3s ease;
+            }
+        }
     }
 
     &-content {
         flex: 0 0 auto;
+        width: 100%;
+        max-width: 952px;
         padding: 40px;
         border-radius: 4px;
         background: var(--white, #FFF);
+
+        h1 {
+            margin: 0 0 56px;
+        }
+    }
+
+    &-special {
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &-item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        &-link {
+            font-weight: 500;
+            color: var(--gray, #585858);
+
+            &:hover {
+                text-decoration: none;
+                color: var(--green, #0C674B);
+            }
+        }
+    }
+
+    &-container {
+        max-width: 592px;
+        margin: auto;
+    }
+
+    &-btn {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1400px) {
+        &-content {
+            max-width: 100%;
+            width: auto;
+            flex: 1;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        &-nav {
+            display: none;
+        }
     }
 }

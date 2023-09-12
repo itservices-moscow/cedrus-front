@@ -199,4 +199,27 @@
 }
 .auth-form form .form-link a:hover {
   color: var(--green, #0C674B);
+}
+
+.user {
+  padding: 60px 0 140px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  background: var(--gray-light-2, #F0F0F0);
+}
+.user-nav {
+  flex: 0 0 auto;
+  width: 378px;
+  padding: 40px 0px 80px 0px;
+  border-radius: 0px 4px 4px 0px;
+  background: var(--white, #FFF);
+  position: sticky;
+  top: 30px;
+}
+.user-content {
+  flex: 0 0 auto;
+  padding: 40px;
+  border-radius: 4px;
+  background: var(--white, #FFF);
 }/*# sourceMappingURL=new.css.map */

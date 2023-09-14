@@ -60,6 +60,10 @@ $(document).ready(function () {
         $(this).closest('.dropdown').find('.dropdown-toggle span').text($(this).text());
     });
 
+    $('.sort-options li a').on('click', function() {
+        $('#catalog-sort span').text($(this).text());
+    });
+
     // telephone mask
     $('input[type=tel]').on('input', function() {
         this.value = this.value
@@ -78,5 +82,39 @@ $(document).ready(function () {
     $('.user-nav-item-dropdown .user-nav-link').on('click', function() {
         $(this).parents('.user-nav-item-dropdown').toggleClass('open');
         return false;
+    });
+
+    $('.filter-price').each(function() {
+        var [ fromSlider, toSlider ] = $(this).find('input[type=range]');
+        var [ fromInput, toInput ] = $(this).find('input[type=text]');
+
+        $(fromSlider).on('input', function() {
+            if (+toSlider.value < +this.value)
+                this.value = toSlider.value;
+            fromInput.value = 'от ' + (+this.value).toLocaleString('ru');
+
+            if (this.value === this.max)
+                this.style.zIndex = 5;
+            else
+                this.style.zIndex = "";
+        });
+
+        $(toSlider).on('input', function() {
+            if (+this.value < +fromSlider.value)
+                this.value = fromSlider.value;
+            toInput.value = 'до ' + (+this.value).toLocaleString('ru');
+        });
+
+        $(fromInput).on('input', function() {
+            var from = Math.min(toSlider.value, this.value.replace(/\D/g, ''));
+            fromSlider.value = from;
+            this.value = 'от ' + from.toLocaleString('ru');
+        });
+
+        $(toInput).on('input', function() {
+            var to = Math.min(toSlider.max, this.value.replace(/\D/g, ''));
+            toSlider.value = Math.max(fromSlider.value, to);
+            this.value = 'до ' + to.toLocaleString('ru');
+        });
     });
 });

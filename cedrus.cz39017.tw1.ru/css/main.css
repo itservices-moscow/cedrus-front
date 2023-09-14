@@ -2410,6 +2410,31 @@ form .dropdown-menu {
 	background-color: #0C674B;
 	border-color: #0C674B;
 }
+.form-switch {
+	display: flex;
+	align-items: center;
+	margin: 24px 0;
+	padding: 0;
+}
+.form-switch .form-check-input {
+	width: 32px;
+	height: 20px;
+	border-color: #585858;
+	border-radius: 10px;
+	background-color: #585858;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+	margin: 0;
+	margin-right: 8px;
+}
+.form-switch .form-check-input:focus {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+.form-switch .form-check-input:hover {
+	background-color: #FFFFFF;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%230C674B'/%3e%3c/svg%3e");
+	border-color: #0C674B;
+	filter: none;
+}
 .filter,
 .sort {
 	display: none;
@@ -3523,6 +3548,76 @@ td {
 .building__material img {
 	width: 32px;
 }
+.specs-table {
+	text-align: center;
+}
+.specs-table tr {
+	border: none;
+}
+.specs-table th,
+.specs-table td {
+	min-width: 188px;
+	line-height: 140%;
+}
+.specs-table th {
+	position: sticky;
+	left: 0;
+	background: #FFFFFF;
+	font-size: 18px;
+	font-weight: 400;
+	vertical-align: middle;
+	padding: 16px 4px;
+}
+.specs-table td {
+	color: #111111;
+	padding: 16px;
+}
+.specs-table tr:nth-child(2n+1),
+.specs-table tr:nth-child(2n+1) th {
+	background: #F5F5F5;
+}
+.specs__text-start td {
+	text-align: left;
+	vertical-align: top;
+}
+.specs-color {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+.specs-color__pink {
+	background: #FD5571;
+}
+.specs-color__green {
+	background: #6ECA8D;
+}
+.specs-color__blue {
+	background: #1E1E1E;
+}
+.specs-color__black {
+	background: #3E9197;
+}
+.compare-clear a {
+	background: #0C674B;
+	border: 0px solid #0C674B;
+	border-radius: 4px;
+	width: 270px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	margin: 56px auto 0;
+	color: #FFFFFF;
+}
+.compare-clear a:hover {
+	background: #034430;
+}
 @media (max-width:768px) {
 	.breadcrumbs {
 		display: none;
@@ -4114,6 +4209,13 @@ td {
 	.contact-item img {
 		height: 460px;
 	}
+	.specs-table {
+		text-align: left;
+	}
+	.compare-clear a {
+		width: 100%;
+		margin-top: 40px;
+	}
 }
 @media (max-width:580px) {
 	.menu-mob__item {
@@ -4468,6 +4570,10 @@ td {
 		padding: 16px;
 	}
 	.catalog__mob-btn a {
+		font-size: 14px;
+	}
+	.specs-table th,
+	.specs-table td {
 		font-size: 14px;
 	}
 }

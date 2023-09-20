@@ -443,6 +443,38 @@
 .user-bonus-unlink:hover {
   color: var(--green, #0C674B);
 }
+.user-order-title {
+  display: flex;
+  color: var(--gray, #585858);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+.user-order-title::after {
+  content: attr(data-status);
+  margin-left: auto;
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--green, #0C674B);
+  font-size: 14px;
+  color: var(--white, #FFF);
+  font-size: 14px;
+  font-weight: 400;
+}
+.user-order-section {
+  margin-top: 56px;
+}
+.user-order-item {
+  padding: 24px 16px;
+  border-bottom: 1px solid var(--gray-light, #DADADA);
+  margin: 0;
+}
+.user-order-item .cart__item-color__box {
+  background-color: var(--product-color);
+}
 @media screen and (max-width: 1400px) {
   .user-content {
     max-width: 100%;

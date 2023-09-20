@@ -2410,7 +2410,7 @@
 					<input class="form-check-input" type="checkbox" id="agree">
 					<label class="form-check-label" for="agree">Нажимая на кнопку “Отправить заявку” я принимаю условия <a href="#">Политики конфиденциальности</a></label>
 				</div>
-				<button type="button" data-fancybox data-src="#send-success" class="btn btn-form" onclick="$.fancybox.close()">Отправить заявку</button>
+				<button type="button" data-fancybox data-src="#send-success" class="btn btn-form btn-center" onclick="$.fancybox.close()">Отправить заявку</button>
 			</div>
 		</form>
 	</div>
@@ -2439,7 +2439,7 @@
 					<input class="form-check-input" type="checkbox" id="agree">
 					<label class="form-check-label" for="agree">Нажимая на кнопку “Отправить заявку” я принимаю условия <a href="#">Политики конфиденциальности</a></label>
 				</div>
-				<button type="button" data-fancybox data-src="#send-success" class="btn btn-form" onclick="$.fancybox.close()">Отправить заявку</button>
+				<button type="button" data-fancybox data-src="#send-success" class="btn btn-form btn-center" onclick="$.fancybox.close()">Отправить заявку</button>
 			</div>
 		</form>
 	</div>
@@ -2448,16 +2448,13 @@
 		<p>Оставьте свои контактные данные. Наши менеджеры свяжутся с вами для уточнения деталей заказа.</p>
 		<form action="#">
 			<div class="cart__item">
-				<img src="img/product1.png" alt="alt">
+				<img class="cart__item-img" src="img/product1.png" alt="alt">
 				<div class="cart__item-name">Грунт ОСНОВИТ УНКОНТ СТАНДАPТ LP51</div>
 				<div class="cart__item-color">Цвет
 					<span class="cart__item-color__box color-green-light"></span>
 				</div>
-				<div class="product-blocks__stock">
-					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-						<path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"></path>
-						<path d="M13.4375 8.125L8.85156 12.5L6.5625 10.3125" stroke="#0C674B" stroke-linecap="round" stroke-linejoin="round"></path>
-					</svg>В наличии
+				<div class="product-item__stock">
+					<img src="img/stock.svg" alt="alt">В наличии
 				</div>
 				<div class="product-item__quanti">
 					<button type="button" disabled="">-</button>
@@ -2489,19 +2486,19 @@
 					<input class="form-check-input" type="checkbox" id="agree">
 					<label class="form-check-label" for="agree">Нажимая на кнопку “Заказать” я принимаю условия <a href="#">Политики конфиденциальности</a></label>
 				</div>
-				<button data-fancybox data-src="#send-error" type="button" class="btn btn-form" onclick="$.fancybox.close()" onclick="$.fancybox.close()">Заказать</button>
+				<button data-fancybox data-src="#send-error" type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()" onclick="$.fancybox.close()">Заказать</button>
 			</div>
 		</form>
 	</div>
 	<div class="modal-fb send-result" id="send-success">
 		<div class="banner__title">Ваши данные успешно отправлены!</div>
 		<p>Мы получили Ваши контактные данные и в течение дня с Вами свяжемся.</p>
-		<button type="button" class="btn btn-form" onclick="$.fancybox.close()">Закрыть</button>
+		<button type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()">Закрыть</button>
 	</div>
 	<div class="modal-fb send-result" id="send-error">
 		<div class="banner__title">Произошла ошибка!</div>
 		<p>Не удалось отправить данные. Перезагрузите страницу или попробуйте позже.</p>
-		<button type="button" class="btn btn-form" onclick="$.fancybox.close()">Закрыть</button>
+		<button type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()">Закрыть</button>
 	</div>
 	<script src="../code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script src="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

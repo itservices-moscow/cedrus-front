@@ -466,25 +466,40 @@
 		</div>
 		<div class="user-content">
 			<h1 class="user-title">Попапы</h1>
-			<h2 class="user-subtitle">подтверждение номера телефона при регистрации</h2>
 			<p><a href="#confirmPhone" data-fancybox>подтверждение номера телефона при регистрации </a></p>
+			<button type="button" onclick="$.fancybox.open($('#confirmPhone'));">Пример с кнопкой</button>
+			<!-- Попап открывается $.fancybox.open($('#confirmPhone'));
+			Закрывается $.fancybox.close(); -->
 			<div class="modal-fb" id="confirmPhone">
-				<div class="banner__title">Подтвердите действие, введя код</div>
-				<p>Сейчас вам позвонит робот. Для подтверждения введите последние 4 цифры номера телефона, с которого поступит звонок.</p>
-				<form action="" class="form">
-					<div class="form-field">
-						<label class="form-label">Код подтверждения</label>
-						<input type="text" class="form-control" placeholder="Ввод">
-					</div>
-					<div class="form-field">
-						<a href="" class="form-link">Запросить код повторно 
-							<span class="form-timer">
+				<div class="user-popup">
+					<div class="banner__title">Подтвердите действие, введя код</div>
+					<p>Сейчас вам позвонит робот. Для подтверждения введите последние 4 цифры номера телефона, с которого поступит звонок.</p>
+					<form action="" class="form">
+						<div class="form-field">
+							<label class="form-label">Код подтверждения</label>
+							<input type="text" class="form-control error" placeholder="Ввод">
+							<div class="form-error">Код  введен неверно</div>
+						</div>
+						<div class="form-code">
+							<a href="" class="form-link">Запросить код повторно</a>
+							<span class="form-timer error">
 								<svg class="icon icon-clock"><use xlink:href="img/icon/symbol-defs.svg#icon-clock"></use></svg> 02:56
 							</span>
-						</a>
-					</div>
-					<button type="submit" class="btn btn-form btn-block">Подтвердить</button>
-				</form>
+						</div>
+						<button type="submit" class="btn btn-form btn-block">Подтвердить</button>
+					</form>
+				</div>
+			</div>
+
+			<p><a href="#popupNotification" data-fancybox>Карта привязана успешно! (Произошла ошибка!)</a></p>
+			<div class="modal-fb" id="popupNotification">
+				<div class="user-popup user-popup-notification">
+					<div class="banner__title">Карта привязана успешно!</div>
+					<!-- <div class="banner__title">Произошла ошибка!</div> -->
+					<p>Вы успешно привязали карту лояльности. Теперь вы можете использовать все преимущества программы.</p>
+					<!-- <p>Перезагрузите страницу или попробуйте позже.</p> -->
+					<button type="button" class="btn btn-form btn-block" onclick="$.fancybox.close();">Закрыть</button>
+				</div>
 			</div>
 		</div>
 	</section>

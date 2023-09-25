@@ -23,7 +23,7 @@
         align-items: center;
         gap: 8px;
         color: var(--gray, #585858);
-        
+
         .icon {
             font-size: 20px;
         }
@@ -644,6 +644,86 @@
 
         &-notification {
             text-align: center;
+        }
+    }
+
+    &-contact {
+        &-text {
+            margin-top: 8px;
+        }
+
+        &-button {
+            margin-bottom: 80px;
+        }
+
+        &-city {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 56px;
+
+            &-link {
+                display: flex;
+                padding: 4px 8px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12px;
+                background: var(--gray-light-3, #F5F5F5);
+                color: var(--gray, #585858);
+                text-decoration: none;
+                font-size: 14px;
+                transition: all .3s ease;
+
+                &:hover,
+                &.active {
+                    background: var(--green, #0C674B);
+                    color: var(--white, #FFF);
+                }
+            }
+        }
+
+        &-title {
+            padding: 0 24px;
+            margin: 0 0 24px;
+            color: var(--black, #111);
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        &-info {
+            padding: 0 24px;
+            margin-bottom: 56px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            a {
+                color: var(--blue-dark, #0C2B67);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &-title,
+            &-text {
+                padding: 8px;
+                border-bottom: 1px solid var(--gray-light, #DADADA);
+                margin: 0;
+            }
+
+            &-title {
+                color: var(--black, #111);
+                font-weight: 600;
+            }
+
+            &-text {
+                color: var(--gray, #585858);
+                text-align: right;
+            }
         }
     }
 

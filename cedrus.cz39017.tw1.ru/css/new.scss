@@ -258,6 +258,14 @@
             }
         }
     }
+
+    @media screen and (max-width: 800px) {
+        &-nav {
+            &-step {
+                display: none;
+            }
+        }
+    }
 }
 
 .auth-form {
@@ -736,6 +744,13 @@
     }
 
     @media screen and (max-width: 800px) {
+        padding: 40px 20px 120px;
+        background: var(--white, #FFF);
+
+        &-content {
+            padding: 0;
+        }
+
         &-nav {
             display: none;
         }
@@ -743,6 +758,14 @@
         &-popup {
             .btn-form {
                 margin-top: auto;
+            }
+        }
+
+        &-contact {
+            &-button {
+                .btn {
+                    width: 100%;
+                }
             }
         }
     }

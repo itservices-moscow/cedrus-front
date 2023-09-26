@@ -208,6 +208,11 @@
   height: 1px;
   background-color: #DADADA;
 }
+@media screen and (max-width: 800px) {
+  .auth-nav-step {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .auth-form-wrap {
@@ -597,10 +602,20 @@
   }
 }
 @media screen and (max-width: 800px) {
+  .user {
+    padding: 40px 20px 120px;
+    background: var(--white, #FFF);
+  }
+  .user-content {
+    padding: 0;
+  }
   .user-nav {
     display: none;
   }
   .user-popup .btn-form {
     margin-top: auto;
+  }
+  .user-contact-button .btn {
+    width: 100%;
   }
 }/*# sourceMappingURL=new.css.map */

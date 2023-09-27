@@ -3570,38 +3570,101 @@ td {
 .building__material img {
 	width: 32px;
 }
-.specs-table {
+.specs-wrapper {
+	overflow: auto;
+	scroll-snap-type: x mandatory;
+	scroll-padding-left: 200px;
 	margin-top: 24px;
-	text-align: center;
+	padding: 0;
+}
+.specs-table {
+	table-layout: fixed;
 }
 .specs-table tr {
 	border: none;
 }
 .specs-table th,
 .specs-table td {
-	min-width: 188px;
+	position: relative;
 	line-height: 140%;
+	padding: 16px;
 }
 .specs-table th {
 	position: sticky;
 	left: 0;
+	width: 188px;
 	background: #FFFFFF;
-	font-size: 18px;
 	font-weight: 400;
 	vertical-align: middle;
-	padding: 16px 4px;
+	z-index: -1;
 }
 .specs-table td {
+	width: 240px;
 	color: #111111;
-	padding: 16px;
+	scroll-snap-align: start;
+	z-index: -2;
 }
-.specs-table tr:nth-child(2n+1),
+.specs-table__header th,
+.specs-table__header td {
+	z-index: auto;
+}
+.specs-table tr:nth-child(2n+1) td,
 .specs-table tr:nth-child(2n+1) th {
 	background: #F5F5F5;
 }
-.specs__text-start td {
-	text-align: left;
+.specs-table__scroll {
+	display: flex;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.specs-table__scroll-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 36px;
+	width: 36px;
+	background: #FFFFFF;
+	border: none;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 0 6px;
+}
+.specs-table__scroll-btn:first-child {
+	transform: rotate(180deg);
+}
+.specs-table__align-top th,
+.specs-table__align-top td {
 	vertical-align: top;
+}
+.specs-table__product {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto auto;
+}
+.specs-table__product-img {
+	width: 56px;
+	height: 56px;
+	object-fit: contain;
+	grid-row: 1 / -1;
+}
+.specs-table__product-name {
+	margin-bottom: 8px;
+}
+.specs-table__header-sticky .specs-table__product-name {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.specs-table__remove {
+	color: #585858;
+	font-size: 14px;
+	text-decoration: none;
+	justify-self: start;
+}
+.specs-table__remove span {
+	margin-right: 4px;
 }
 .specs-color {
 	display: inline-block;

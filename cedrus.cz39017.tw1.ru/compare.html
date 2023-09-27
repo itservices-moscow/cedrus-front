@@ -789,15 +789,54 @@
 				<input class="form-check-input" type="checkbox" id="specsSwitch">
 				<label class="form-check-label" for="specsSwitch">Показать только отличия</label>
 			</div>
-			<div class="row overflow-auto">
-				<div class="col">
+			<div class="row position-relative">
+				<div class="specs-wrapper">
+
 					<table class="specs-table">
-						<tr class="specs__text-start">
-							<th>Название</th>
-							<td>Грунт ОСНОВИТ УНКОНТ СТАНДАPТ LP51</td>
-							<td>Интерьерная краска глубокоматовая моющаяся для стен и потолков ОСНОВИТ UNIVITA STUDIO Lusso II</td>
-							<td>Грунт силикатный Основит ТЕХКОНТ LSt57</td>
-							<td>БРИКФОРМ MC11 цветной кладочный раствор для облицовочного кирпича ОСНОВИТ</td>
+						<tr class="specs-table__header specs-table__align-top">
+							<th>
+								Название
+								<div class="specs-table__scroll">
+									<button class="specs-table__scroll-btn" id="table-scroll-left"><img src="img/arrow-right.svg"></button>
+									<button class="specs-table__scroll-btn" id="table-scroll-right"><img src="img/arrow-right.svg"></button>
+								</div>
+							</th>
+							<td>
+								<div class="specs-table__product">
+									<img class="specs-table__product-img" src="img/product1.png" alt="product">
+									<div class="specs-table__product-name">Грунт ОСНОВИТ УНКОНТ СТАНДАPТ LP51</div>
+									<a class="specs-table__remove" href="#!">
+											<span>Удалить</span><img src="img/close.svg" alt="alt">
+									</a>
+								</div>
+							</td>
+							<td>
+								<div class="specs-table__product">
+									<img class="specs-table__product-img" src="img/product1.png" alt="product">
+									<div class="specs-table__product-name">Интерьерная краска глубокоматовая моющаяся для стен и потолков ОСНОВИТ UNIVITA STUDIO Lusso II</div>
+									<a class="specs-table__remove" href="#!">
+										<span>Удалить</span><img src="img/close.svg" alt="alt">
+									</a>
+								</div>
+							</td>
+							<td>
+								<div class="specs-table__product">
+									<img class="specs-table__product-img" src="img/product1.png" alt="product">
+									<div class="specs-table__product-name">Грунт силикатный Основит ТЕХКОНТ LSt57</div>
+									<a class="specs-table__remove" href="#!">
+											<span>Удалить</span><img src="img/close.svg" alt="alt">
+									</a>
+								</div>
+							</td>
+							<td>
+								<div class="specs-table__product">
+									<img class="specs-table__product-img" src="img/product1.png" alt="product">
+									<div class="specs-table__product-name">БРИКФОРМ MC11 цветной кладочный раствор для облицовочного кирпича ОСНОВИТ</div>
+									<a class="specs-table__remove" href="#!">
+										<span>Удалить</span><img src="img/close.svg" alt="alt">
+									</a>
+								</div>
+							</td>
 						</tr>
 						<tr>
 							<th>Цена</th>
@@ -848,7 +887,7 @@
 							<td>Основит</td>
 							<td>Основит</td>
 						</tr>
-						<tr class="specs__text-start">
+						<tr class="specs-table__align-top">
 							<th>Особенности</th>
 							<td>Хорошая паропроницаемость/ Возможность машинного и ручного нанесения/ Регулирование впитывающей способности основания/ Морозостойкость/ Для внутренних и наружных работ/ Для механизированного и ручного нанесения/ Создание шероховатой высокоадгезионной поверхности</td>
 							<td>Высокая пластичность готового раствора/ Высокое качество готовой поверхности/ Низкий расход/ Для стен из бетона, кирпича, ячеистого бетона/ Высокая трещиностойкость/ Атмосферостойкость/ Для внутренних и наружных работ</td>
@@ -1079,6 +1118,40 @@ if (products) {
                 slideToClickedSlide: true,
             }
         }
+		});
+
+		var specsScroller = document.querySelector(".specs-wrapper");
+		var tableScrollButtons = document.querySelector(".specs-table__scroll");
+		var tableScrollLeft = document.getElementById("table-scroll-left");
+		var tableScrollRight = document.getElementById("table-scroll-right");
+		var table = specsScroller.querySelector(".specs-table");
+		var tableHeader = table.querySelector(".specs-table__header");
+
+		function updateButtons() {
+			if (specsScroller.scrollWidth > specsScroller.clientWidth)
+				tableScrollButtons.style.display = "";
+			else
+				tableScrollButtons.style.display = "none";
+		}
+		window.addEventListener('resize', updateButtons);
+		updateButtons();
+
+		tableScrollLeft.addEventListener('click', function() {
+			specsScroller.scrollBy({left: -180, behavior: "smooth"});
+		});
+		tableScrollRight.addEventListener('click', function() {
+			specsScroller.scrollBy({left: 180, behavior: "smooth"});
+		});
+
+		window.addEventListener('scroll', function() {
+			var tableScreenPosY = -table.getBoundingClientRect().top;
+			if (tableScreenPosY > 0) {
+				tableHeader.className = "specs-table__header-sticky";
+				tableHeader.style.transform = "translateY(" + tableScreenPosY + "px)";
+			} else {
+				tableHeader.className = "specs-table__header specs-table__align-top";
+				tableHeader.style.transform = "";
+			}
 		});
 	</script>
 </body>

@@ -1,4 +1,23 @@
 $(document).ready(function () {
+    //mobile nav
+    $(".header__burger").click(function () {
+        $(".menu-mob").addClass('open');
+    });
+    $(".menu-mob__close").click(function () {
+        $(".menu-mob").removeClass('open');
+        if ($(".user-nav").length) {
+            $(".user-nav").removeClass('active');
+        }
+    });
+
+    // user nav open 
+    if ($(".user-nav").length) {
+        $("body").on("click", ".user-nav-open", function(){
+            $(".user-nav").toggleClass('active');
+            return false;
+        });
+    }    
+    
     // product counter
     updateMinusButtonState();
 
@@ -60,12 +79,12 @@ $(document).ready(function () {
         $(this).closest('.dropdown').find('.dropdown-toggle span').text($(this).text());
     });
 
-    $('.sort-options li a').on('click', function() {
+    $('.sort-options li a').on('click', function () {
         $('#catalog-sort span').text($(this).text());
     });
 
     // telephone mask
-    $('input[type=tel]').on('input', function() {
+    $('input[type=tel]').on('input', function () {
         this.value = this.value
             .replace(/(\+7|\D)/g, '')
             .replace(/(\d{0,10})\d*/, '+7 ($1')
@@ -74,21 +93,21 @@ $(document).ready(function () {
             .replace(/(-\d{2})(\d)/, '$1-$2');
     });
 
-    $('.contact-places__btn').on('click', function() {
+    $('.contact-places__btn').on('click', function () {
         var list = $(this).siblings('.contact-places__list')[0];
-        list.scrollBy({left: list.offsetWidth});
+        list.scrollBy({ left: list.offsetWidth });
     });
 
-    $('.user-nav-item-dropdown .user-nav-link').on('click', function() {
+    $('.user-nav-item-dropdown .user-nav-link').on('click', function () {
         $(this).parents('.user-nav-item-dropdown').toggleClass('open');
         return false;
     });
 
-    $('.filter-price').each(function() {
-        var [ fromSlider, toSlider ] = $(this).find('input[type=range]');
-        var [ fromInput, toInput ] = $(this).find('input[type=text]');
+    $('.filter-price').each(function () {
+        var [fromSlider, toSlider] = $(this).find('input[type=range]');
+        var [fromInput, toInput] = $(this).find('input[type=text]');
 
-        $(fromSlider).on('input', function() {
+        $(fromSlider).on('input', function () {
             if (+toSlider.value < +this.value)
                 this.value = toSlider.value;
             fromInput.value = 'от ' + (+this.value).toLocaleString('ru');
@@ -99,19 +118,19 @@ $(document).ready(function () {
                 this.style.zIndex = "";
         });
 
-        $(toSlider).on('input', function() {
+        $(toSlider).on('input', function () {
             if (+this.value < +fromSlider.value)
                 this.value = fromSlider.value;
             toInput.value = 'до ' + (+this.value).toLocaleString('ru');
         });
 
-        $(fromInput).on('input', function() {
+        $(fromInput).on('input', function () {
             var from = Math.min(toSlider.value, this.value.replace(/\D/g, ''));
             fromSlider.value = from;
             this.value = 'от ' + from.toLocaleString('ru');
         });
 
-        $(toInput).on('input', function() {
+        $(toInput).on('input', function () {
             var to = Math.min(toSlider.max, this.value.replace(/\D/g, ''));
             toSlider.value = Math.max(fromSlider.value, to);
             this.value = 'до ' + to.toLocaleString('ru');

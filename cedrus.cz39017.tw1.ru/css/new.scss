@@ -753,6 +753,16 @@
 
         &-nav {
             display: none;
+
+            &.active {
+                position: absolute;
+                display: block;
+                width: 100vw;
+                top: 90px;
+                left: 0;
+                bottom: 97px;
+                z-index: 1000;
+            }
         }
 
         &-popup {

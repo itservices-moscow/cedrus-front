@@ -612,6 +612,15 @@
   .user-nav {
     display: none;
   }
+  .user-nav.active {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    top: 90px;
+    left: 0;
+    bottom: 97px;
+    z-index: 1000;
+  }
   .user-popup .btn-form {
     margin-top: auto;
   }

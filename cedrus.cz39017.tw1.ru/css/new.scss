@@ -602,6 +602,19 @@
             font-weight: 500;
             margin: 0;
 
+            &-transit,
+            &-delivered {
+                --bgc: var(--green);
+            }
+
+            &-waiting {
+                --bgc: var(--gray);
+            }
+
+            &-cancelled {
+                --bgc: var(--red);
+            }
+
             &::after {
                 content: attr(data-status);
                 margin-left: auto;
@@ -610,7 +623,7 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 12px;
-                background: var(--green, #0C674B);
+                background: var(--bgc);
                 font-size: 14px;
                 color: var(--white, #FFF);
                 font-size: 14px;
@@ -629,6 +642,64 @@
 
             .cart__item-color__box {
                 background-color: var(--product-color);
+            }
+        }
+
+        &-total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+
+            &-col {
+                min-width: 250px;
+            }
+
+            &-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 16px;
+            }
+
+            &-title {
+                color: var(--gray, #585858);
+            }
+
+            &-sum {
+                font-size: 24px;
+                color: var(--black, #111);
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+
+            &-bonus {
+                font-size: 14px;
+                color: var(--gray, #585858);
+            }
+
+            &-text {
+                color: var(--gray, #585858);
+                margin-bottom: 16px;
+                
+                strong {
+                    font-weight: 600;
+                    color: var(--black, #111);
+                }
+            }
+
+            &-title {
+                margin-bottom: 16px;
+                color: var(--gray, #585858);
+            }
+        }
+
+        &-button {
+            .btn {
+                width: 100%;
+
+                &-form {
+                    margin-top: 24px;
+                }
             }
         }
     }
@@ -822,6 +893,26 @@
 
                 &-text {
                     font-size: 14px;
+                }
+            }
+        }
+
+        &-order {
+            &-total {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                &-col {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+
+                &-title,
+                &-text,
+                &-sum {
+                    margin-bottom: 0;
                 }
             }
         }

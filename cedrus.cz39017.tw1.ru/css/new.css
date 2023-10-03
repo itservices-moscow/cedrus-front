@@ -212,6 +212,12 @@
   .auth-nav-step {
     display: none;
   }
+  .auth-nav-link {
+    padding: 12px 0;
+  }
+  .auth-form .btn-form {
+    padding: 0 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -543,6 +549,7 @@
   color: var(--black, #111);
   font-weight: 500;
   margin-bottom: 8px;
+  white-space: nowrap;
 }
 .user-order-total-bonus {
   font-size: 14px;
@@ -551,6 +558,7 @@
 .user-order-total-text {
   color: var(--gray, #585858);
   margin-bottom: 16px;
+  white-space: nowrap;
 }
 .user-order-total-text strong {
   font-weight: 600;
@@ -703,6 +711,13 @@
   .user-contact-info {
     margin: 0 0 24px;
   }
+  .user-special {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
 }
 @media screen and (max-width: 576px) {
   .user {
@@ -732,5 +747,16 @@
   }
   .user-order-total-title, .user-order-total-text, .user-order-total-sum {
     margin-bottom: 0;
+  }
+  .user-order-title {
+    font-size: 16px;
+  }
+  .user-bonus {
+    display: block;
+    margin-top: 40px;
+  }
+  .user-bonus-img {
+    margin: 0 auto 16px;
+    display: block;
   }
 }/*# sourceMappingURL=new.css.map */

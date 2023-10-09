@@ -530,8 +530,8 @@
 		</div>
 		<div class="user-content">
 			<h1 class="user-title">Попапы</h1>
-			<p><a href="#confirmPhone" data-fancybox>подтверждение номера телефона при регистрации </a></p>
-			<button type="button" onclick="$.fancybox.open($('#confirmPhone'));">Пример с кнопкой</button>
+			<p><a href="#confirmPhone" data-options='{"touch" : false}' data-fancybox>подтверждение номера телефона при регистрации </a></p>
+			<button type="button" data-options='{"touch" : false}' data-fancybox data-src="#confirmPhone">Пример с кнопкой</button>
 			<!-- Попап открывается $.fancybox.open($('#confirmPhone'));
 			Закрывается $.fancybox.close(); -->
 			<div class="modal-fb" id="confirmPhone">
@@ -555,7 +555,7 @@
 				</div>
 			</div>
 
-			<p><a href="#popupNotification" data-fancybox>Карта привязана успешно! (Произошла ошибка!)</a></p>
+			<p><a href="#popupNotification" data-options='{"touch" : false}' data-fancybox>Карта привязана успешно! (Произошла ошибка!)</a></p>
 			<div class="modal-fb" id="popupNotification">
 				<div class="user-popup user-popup-notification">
 					<div class="banner__title">Карта привязана успешно!</div>

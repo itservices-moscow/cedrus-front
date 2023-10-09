@@ -4625,6 +4625,7 @@ input:checked + .order-pay {
 	}
 	.fancybox-content {
 		padding: 40px 15px;
+		height: 100%;
 	}
 	.modal-fb p {
 		font-size: 14px;

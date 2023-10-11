@@ -511,9 +511,10 @@
 				<h1>Корзина</h1>
 			</div>
 			<div class="cart__controls">
-				<label class="form-check-label">
-					<input class="form-check-input" type="checkbox">Выбрать все
-				</label>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" id="select-all">
+					<label class="form-check-label" for="select-all">Выбрать все</label>
+				</div>
 				<a class="cart__delete" href="">Удалить выбранные</a>
 			</div>
 			<div class="row">
@@ -633,10 +634,11 @@
 							Начислим 120 бонусов
 						</div>
 						<a class="cart-summary__order" href="#">Оформить заказ</a>
-						<label class="form-label cart-summary__promo">Введите промокод</label>
-						<div class="cart-summary__row">
+						<label class="form-label cart-summary__promo-label">Введите промокод</label>
+						<div class="cart-summary__row cart-summary__promo">
 							<input type="text" class="form-control" placeholder="Промокод">
-							<input type="checkbox" class="form-check-input" checked>
+							<button class="btn cart-summary__promo-btn"></button>
+							<span class="cart-summary__promo-result"></span>
 						</div>
 					</div>
 				</div>
@@ -893,5 +895,21 @@
 	<!-- Swiper JS -->
 	<script src="libs/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		$('.cart-summary__promo-btn').on('click', function() {
+			var codeField = $(this).siblings('.form-control');
+			var result = $(this).siblings('.cart-summary__promo-result');
+			var promoCode = codeField.val();
+
+			if (promoCode == '11111') {
+				$(this).parent().removeClass('failure').addClass('success');
+				result.text('Промокод успешно применен');
+			} else {
+				$(this).parent().removeClass('success').addClass('failure');
+				codeField.val('');
+				result.text('Не удалось применить промокод');
+			}
+		});
+	</script>
 </body>
 </html>

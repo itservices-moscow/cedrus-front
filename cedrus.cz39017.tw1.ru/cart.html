@@ -638,7 +638,7 @@
 						<div class="cart-summary__row cart-summary__promo">
 							<input type="text" class="form-control" placeholder="Промокод">
 							<button class="btn cart-summary__promo-btn"></button>
-							<span class="cart-summary__promo-result"></span>
+							<span class="form-result"></span>
 						</div>
 					</div>
 				</div>
@@ -898,14 +898,14 @@
 	<script>
 		$('.cart-summary__promo-btn').on('click', function() {
 			var codeField = $(this).siblings('.form-control');
-			var result = $(this).siblings('.cart-summary__promo-result');
+			var result = $(this).siblings('.form-result');
 			var promoCode = codeField.val();
 
 			if (promoCode == '11111') {
-				$(this).parent().removeClass('failure').addClass('success');
+				$(this).parent().removeClass('form-error').addClass('form-success');
 				result.text('Промокод успешно применен');
 			} else {
-				$(this).parent().removeClass('success').addClass('failure');
+				$(this).parent().removeClass('form-success').addClass('form-error');
 				codeField.val('');
 				result.text('Не удалось применить промокод');
 			}

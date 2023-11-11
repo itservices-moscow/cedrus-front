@@ -532,58 +532,60 @@
 					<div class="section__title">
 						<h2>Контактная информация и причина обращения</h2>
 					</div>
-					<form action="#">
+					<form id="complaint_form" action="#">
 						<div class="row">
 							<div class="col-xl-6 mb-4">
 								<label class="form-label">Кто вы?</label>
+								<input name="who" type="hidden">
 								<div class="dropdown">
-									<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+									<button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
 										<span>Выберите</span>
 									</button>
 									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-										<li><button class="dropdown-item" type="button">Физическое лицо</button></li>
-										<li><button class="dropdown-item" type="button">Юридическое лицо</button></li>
-										<li><button class="dropdown-item" type="button">Бригадир</button></li>
+										<li><button class="dropdown-item" data-id-value="who1" type="button">Физическое лицо</button></li>
+										<li><button class="dropdown-item" data-id-value="who2" type="button">Юридическое лицо</button></li>
+										<li><button class="dropdown-item" data-id-value="who3" type="button">Бригадир</button></li>
 									</ul>
 								</div>
 							</div>
 							<div class="col-xl-6 mb-4">
 								<label class="form-label">Причина обращения</label>
+								<input name="reason" type="hidden">
 								<div class="dropdown">
-									<button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+									<button class="btn dropdown-toggle form-control" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
 										<span>Выберите</span>
 									</button>
 									<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-										<li><button class="dropdown-item" type="button">Технический брак</button></li>
-										<li><button class="dropdown-item" type="button">Недовоз, излишек, пересорт</button></li>
-										<li><button class="dropdown-item" type="button">Нарушение товарного вида (механические повреждения)</button></li>
-										<li><button class="dropdown-item" type="button">Жалоба на торгового представителя</button></li>
-										<li><button class="dropdown-item" type="button">Брак с ущербом</button></li>
+										<li><button class="dropdown-item" data-id-value="reason1" type="button">Технический брак</button></li>
+										<li><button class="dropdown-item" data-id-value="reason2" type="button">Недовоз, излишек, пересорт</button></li>
+										<li><button class="dropdown-item" data-id-value="reason3" type="button">Нарушение товарного вида (механические повреждения)</button></li>
+										<li><button class="dropdown-item" data-id-value="reason4" type="button">Жалоба на торгового представителя</button></li>
+										<li><button class="dropdown-item" data-id-value="reason5" type="button">Брак с ущербом</button></li>
 									</ul>
 								</div>
 							</div>
 							<div class="mb-4">
 								<label class="form-label">Подробно опишите проблему</label>
-								<textarea class="form-control" rows="3" placeholder="Ввод"></textarea>
+								<textarea class="form-control" rows="3" placeholder="Ввод" required></textarea>
 							</div>
 							<div class="col-xl-6 mb-4">
 								<label class="form-label">ФИО клиента</label>
-								<input type="text" class="form-control" placeholder="Ввод">
+								<input type="text" class="form-control" placeholder="Ввод" required>
 							</div>
 							<div class="col-xl-6 mb-4">
 								<label class="form-label">Номер телефона</label>
-								<input type="tel" class="form-control" placeholder="+7 (000) 000 00 00">
+								<input type="tel" class="form-control" placeholder="+7 (000) 000 00 00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
 							</div>
 							<div class="col-xl-6 mb-4">
 								<label class="form-label">Электронная почта клиента</label>
-								<input type="email" class="form-control" placeholder="listhere@mail.ru">
+								<input type="email" class="form-control" placeholder="listhere@mail.ru" required>
 							</div>
 							<div>
 								<div class="form-check form-agree">
-									<input class="form-check-input" type="checkbox" id="agree">
+									<input class="form-check-input" type="checkbox" id="agree" required>
 									<label class="form-check-label" for="agree">Нажимая на кнопку “Отправить” я принимаю условия <a href="#">Политики конфиденциальности</a></label>
 								</div>
-								<button type="button" class="btn btn-form">Отправить</button>
+								<button class="btn btn-form send-form-button">Отправить</button>
 							</div>
 						</div>
 					</form>

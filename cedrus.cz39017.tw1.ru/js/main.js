@@ -10,14 +10,14 @@ $(document).ready(function () {
         }
     });
 
-    // user nav open 
+    // user nav open
     if ($(".user-nav").length) {
         $("body").on("click", ".user-nav-open", function(){
             $(".user-nav").toggleClass('active');
             return false;
         });
-    }    
-    
+    }
+
     // product counter
     updateMinusButtonState();
 
@@ -134,6 +134,72 @@ $(document).ready(function () {
             var to = Math.min(toSlider.max, this.value.replace(/\D/g, ''));
             toSlider.value = Math.max(fromSlider.value, to);
             this.value = 'до ' + to.toLocaleString('ru');
+        });
+    });
+
+    $(document).on('click', 'form#complaint_form ul[aria-labelledby="dropdownMenuButton1"] button', function(e){
+        let variant_id = $(this).data('id-value');
+        let current_form = $(this).closest('form');
+        current_form.find("input[name='who']").val(variant_id);
+        $(this).closest('.form-error').removeClass('form-error');
+    });
+
+    $(document).on('click', 'form#complaint_form ul[aria-labelledby="dropdownMenuButton2"] button', function(e){
+        let variant_id = $(this).data('id-value');
+        let current_form = $(this).closest('form');
+        current_form.find("input[name='reason']").val(variant_id);
+        $(this).closest('.form-error').removeClass('form-error');
+    });
+
+    $(document).on('input', '.form-error', function(e) {
+        $(this).removeClass('form-error');
+    });
+
+    $(document).on('click', '#partner_form button, #consult_form button, #complaint_form button.send-form-button', function(e){
+        e.preventDefault();
+        var current_form = $(this).closest('form');
+
+        current_form.find('input, textarea').each(function () {
+            if (!this.value || !this.validity.valid)
+                $(this).parent().addClass('form-error');
+        });
+
+        if (current_form.find('.form-error').length)
+            return;
+
+        var current_data = current_form.serialize();
+        if (current_form.attr('id') == 'partner_form')
+        {
+            var form_sent_url = 'become_partner.php';
+            $.fancybox.close();
+            $.fancybox.open({ src: '#send-success' });
+        }
+        if (current_form.attr('id') == 'consult_form')
+        {
+            var form_sent_url = 'consult_form.php';
+            $.fancybox.close();
+            $.fancybox.open({ src: '#send-success' });
+        }
+        if (current_form.attr('id') == 'complaint_form')
+        {
+            var form_sent_url = 'complaint_form.php';
+        }
+        $.ajax({
+            url: '/local/templates/cedrus/ajax/'+form_sent_url,
+            method: 'post',
+            dataType: 'json',
+            data: current_data,
+            success: function(msg){
+                if (msg.STATUS == 'OK')
+                {
+                    current_form.find('.form_message').text(msg.MESSAGE);
+                }
+                else
+                {
+                    current_form.find('.form_message').text(msg.MESSAGE);
+                }
+                current_form.find('.form_message').show();
+            }
         });
     });
 });

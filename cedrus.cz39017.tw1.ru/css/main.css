@@ -2189,6 +2189,7 @@ form a {
 	border: none;
 	width: 16px;
 	height: 16px;
+	flex-shrink: 0;
 	margin-left: 4px;
 }
 .dropdown-toggle.show::after {
@@ -3895,20 +3896,21 @@ td {
 .cart-summary__promo-btn:hover {
 	background-color: #034430;
 }
-.cart-summary__promo-result {
+.form-result {
 	width: 100%;
 	margin-top: 8px;
 }
-.success .form-control {
+.form-success .form-control {
 	border-color: #0C674B;
 }
-.success .cart-summary__promo-result {
+.form-success .form-result {
 	color: #0C674B;
 }
-.failure .form-control {
+.form-error .form-control,
+.form-error .form-check-input {
 	border-color: #C73C3C;
 }
-.failure .cart-summary__promo-result {
+.form-error .form-result {
 	color: #C73C3C;
 }
 .send-result {

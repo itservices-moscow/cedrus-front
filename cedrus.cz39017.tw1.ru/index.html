@@ -2452,58 +2452,58 @@
 	<div class="modal-fb" id="consultation">
 		<div class="banner__title">Получите консультацию от эксперта cedrus.market</div>
 		<p>Оставьте заявку. Мы перезвоним и подробно проконсультируем по всем вопросам.</p>
-		<form action="#">
+		<form id="consult_form" action="#">
 			<div class="mt-4 mb-4">
 				<label class="form-label">Имя</label>
-				<input type="text" class="form-control" placeholder="Ввод">
+				<input type="text" class="form-control" placeholder="Ввод" required>
 			</div>
 			<div class="mb-4">
 				<label class="form-label">Телефон</label>
-				<input type="tel" class="form-control" placeholder="+7 (000) 000 00 00">
+				<input type="tel" class="form-control" placeholder="+7 (000) 000 00 00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
 			</div>
 			<div class="mb-4">
 				<label class="form-label">E-mail</label>
-				<input type="email" class="form-control" placeholder="email@mail.ru">
+				<input type="email" class="form-control" placeholder="email@mail.ru" required>
 			</div>
 			<div class="mb-4">
 				<label class="form-label">Ваше сообщение</label>
-				<textarea class="form-control" rows="3" placeholder="Напишите здесь текст"></textarea>
+				<textarea class="form-control" rows="3" placeholder="Напишите здесь текст" required></textarea>
 			</div>
 			<div>
 				<div class="form-check form-agree">
-					<input class="form-check-input" type="checkbox" id="agree">
+					<input class="form-check-input" type="checkbox" id="agree" required>
 					<label class="form-check-label" for="agree">Нажимая на кнопку “Отправить заявку” я принимаю условия <a href="#">Политики конфиденциальности</a></label>
 				</div>
-				<button type="button" data-fancybox data-src="#send-success" class="btn btn-form btn-center" onclick="$.fancybox.close()">Отправить заявку</button>
+				<button class="btn btn-form btn-center">Отправить заявку</button>
 			</div>
 		</form>
 	</div>
 	<div class="modal-fb" id="partner">
 		<div class="banner__title">Станьте партнером cedrus.market</div>
 		<p>Оставьте заявку. Мы перезвоним и подробно проконсультируем по всем вопросам.</p>
-		<form action="#">
+		<form id="partner_form" action="#">
 			<div class="mt-4 mb-4">
 				<label class="form-label">Имя</label>
-				<input type="text" class="form-control" placeholder="Ввод">
+				<input type="text" class="form-control" placeholder="Ввод" required>
 			</div>
 			<div class="mb-4">
 				<label class="form-label">Телефон</label>
-				<input type="tel" class="form-control" placeholder="+7 (000) 000 00 00">
+				<input type="tel" class="form-control" placeholder="+7 (000) 000 00 00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required>
 			</div>
 			<div class="mb-4">
 				<label class="form-label">E-mail</label>
-				<input type="email" class="form-control" placeholder="email@mail.ru">
+				<input type="email" class="form-control" placeholder="email@mail.ru" required>
 			</div>
 			<div class="mb-4">
 				<label class="form-label">Ваше сообщение</label>
-				<textarea class="form-control" rows="3" placeholder="Напишите здесь текст"></textarea>
+				<textarea class="form-control" rows="3" placeholder="Напишите здесь текст" required></textarea>
 			</div>
 			<div>
 				<div class="form-check form-agree">
-					<input class="form-check-input" type="checkbox" id="agree">
+					<input class="form-check-input" type="checkbox" id="agree" required>
 					<label class="form-check-label" for="agree">Нажимая на кнопку “Отправить заявку” я принимаю условия <a href="#">Политики конфиденциальности</a></label>
 				</div>
-				<button type="button" data-fancybox data-src="#send-success" class="btn btn-form btn-center" onclick="$.fancybox.close()">Отправить заявку</button>
+				<button class="btn btn-form btn-center">Отправить заявку</button>
 			</div>
 		</form>
 	</div>
@@ -2550,7 +2550,7 @@
 					<input class="form-check-input" type="checkbox" id="agree">
 					<label class="form-check-label" for="agree">Нажимая на кнопку “Заказать” я принимаю условия <a href="#">Политики конфиденциальности</a></label>
 				</div>
-				<button data-fancybox data-src="#send-error" type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()" onclick="$.fancybox.close()">Заказать</button>
+				<button data-fancybox data-src="#send-error" type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()">Заказать</button>
 			</div>
 		</form>
 	</div>

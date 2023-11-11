@@ -2466,10 +2466,6 @@ form .dropdown-menu {
 	border-color: #0C674B;
 	filter: none;
 }
-.filter,
-.sort {
-	padding: 20px 20px 0;
-}
 .filter__title {
 	font-style: normal;
 	font-weight: 500;
@@ -2533,13 +2529,13 @@ form .dropdown-menu {
 	color: #034430;
 }
 .filter-catalog .form-check-label {
-	display: block;
+	display: flex;
+	align-items: center;
 	margin-top: 8px;
 	color: #585858;
 }
 .filter-catalog .form-check-input {
-	margin-left: 8px;
-	margin-right: 4px;
+	margin: 0 8px;
 }
 .filter-item__show {
 	margin: 8px 0;
@@ -4324,6 +4320,9 @@ input:checked + .order-pay {
 	.popup-citys {
 		padding: 80px 40px;
 	}
+	.filter {
+		padding-bottom: 120px;
+	}
 	.filter-close {
 		position: absolute;
 		top: 20px;
@@ -4645,6 +4644,9 @@ input:checked + .order-pay {
 	.order-pay img {
 		width: 40px;
 		height: 40px;
+	}
+	.footer {
+		padding-bottom: 140px;
 	}
 }
 @media (max-width:580px) {
@@ -5015,6 +5017,9 @@ input:checked + .order-pay {
 	.error-number {
 		font-size: 180px;
 	}
+	.filter {
+		padding-bottom: 120px;
+	}
 	.filter__btns {
 		background: #F0F0F0;
 		padding: 16px;
@@ -5092,5 +5097,8 @@ input:checked + .order-pay {
 	}
 	.order__bonus-use {
 		margin-left: auto;
+	}
+	.footer {
+		padding-bottom: 120px;
 	}
 }

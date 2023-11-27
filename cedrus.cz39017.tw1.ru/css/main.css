@@ -227,6 +227,12 @@ body{
 	justify-content: center;
 	align-items: center;
 }
+.header__item svg circle {
+	display: none;
+}
+.header__item.active svg circle {
+	display: block;
+}
 .header__item-cart {
 	background: #0C674B;
 	padding: 10px 10px;
@@ -3962,10 +3968,6 @@ input:checked + .order-pay {
 		margin-left: 8px;
 		margin-right: 16px;
 	}
-	.mob-bottom__btn a {
-		display: flex;
-		flex-direction: column;
-	}
 	.menu-mob__list {
 		display: flex;
 		flex-direction: column;
@@ -3992,6 +3994,10 @@ input:checked + .order-pay {
 		color: #0C674B;
 	}
 	.mob-bottom__btn a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
 		font-style: normal;
 		font-weight: 400;
@@ -3999,9 +4005,6 @@ input:checked + .order-pay {
 		line-height: 140%;
 		color: #585858;
 		text-decoration: none;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	.menu-mob__bottom .mob-bottom__btn a {
 		font-size: 14px;
@@ -4012,11 +4015,17 @@ input:checked + .order-pay {
 		margin-bottom: 8px;
 	}
 	.mob-bottom__btn:hover a svg path,
-	.mob-bottom__btn.active a svg path {
+	.mob-bottom__btn.highlight a svg path {
 		stroke: #0C674B;
 	}
+	.mob-bottom__btn a svg circle {
+		display: none;
+	}
+	.mob-bottom__btn.active a svg circle {
+		display: block;
+	}
 	.mob-bottom__btn:hover a,
-	.mob-bottom__btn.active a {
+	.mob-bottom__btn.highlight a {
 		color: #0C674B;
 	}
 	.mob-dropdown {

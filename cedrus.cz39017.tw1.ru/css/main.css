@@ -4243,6 +4243,14 @@ input:checked + .order-pay {
 	.fancybox-content {
 		padding: 80px 20px 40px;
 	}
+	.send-result {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+	}
+	.send-result .btn {
+		margin: auto 0 0;
+	}
 	.popup-citys {
 		padding: 80px 40px;
 	}

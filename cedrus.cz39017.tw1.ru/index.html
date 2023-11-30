@@ -2543,15 +2543,19 @@
 			</div>
 		</form>
 	</div>
-	<div class="modal-fb send-result" id="send-success">
-		<div class="banner__title">Ваши данные успешно отправлены!</div>
-		<p>Мы получили Ваши контактные данные и в течение дня с Вами свяжемся.</p>
-		<button type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()">Закрыть</button>
+	<div class="modal-fb" id="send-success">
+		<div class="send-result">
+			<div class="banner__title">Ваши данные успешно отправлены!</div>
+			<p>Мы получили Ваши контактные данные и в течение дня с Вами свяжемся.</p>
+			<button type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()">Закрыть</button>
+		</div>
 	</div>
-	<div class="modal-fb send-result" id="send-error">
-		<div class="banner__title">Произошла ошибка!</div>
-		<p>Не удалось отправить данные. Перезагрузите страницу или попробуйте позже.</p>
-		<button type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()">Закрыть</button>
+	<div class="modal-fb" id="send-error">
+		<div class="send-result">
+			<div class="banner__title">Произошла ошибка!</div>
+			<p>Не удалось отправить данные. Перезагрузите страницу или попробуйте позже.</p>
+			<button type="button" class="btn btn-form btn-center" onclick="$.fancybox.close()">Закрыть</button>
+		</div>
 	</div>
 	<script src="../code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script src="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

@@ -3686,7 +3686,7 @@ td {
 	display: grid;
 	align-items: start;
 	grid-auto-flow: column;
-	grid-template-columns: 40% 1fr auto;
+	grid-template-columns: 30% 1fr auto;
 	grid-template-rows: auto auto 1fr;
 	grid-gap: 24px;
 	margin: 40px 0;
@@ -4613,7 +4613,7 @@ input:checked + .order-pay {
 		font-size: 16px;
 	}
 	.header-center {
-		position: fixed;
+		position: relative;
 	}
 	.footer {
 		font-size: 14px;
@@ -5075,4 +5075,8 @@ input:checked + .order-pay {
 	.footer__download_btns {
 		width: 100%;
 	}
+}
+
+.header-center.special-fixed {
+	position: fixed;
 }

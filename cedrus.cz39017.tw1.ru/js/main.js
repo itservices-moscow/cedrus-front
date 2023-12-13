@@ -14,6 +14,7 @@ $(document).ready(function () {
     if ($(".user-nav").length) {
         $("body").on("click", ".user-nav-open", function(){
             $(".user-nav").toggleClass('active');
+            $(".header-center").toggleClass('special-fixed');
             return false;
         });
     }

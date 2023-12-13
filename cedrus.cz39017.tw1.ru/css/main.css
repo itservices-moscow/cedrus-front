@@ -741,6 +741,11 @@ body{
 	padding-left: 16px;
 	padding-right: 0;
 }
+
+.categories__item > div {
+	align-self: start;
+    padding-top: 16px;
+}
 .categories__item:hover,
 .solution__item:hover {
 	border: 1px solid #034430;
@@ -3681,7 +3686,7 @@ td {
 	display: grid;
 	align-items: start;
 	grid-auto-flow: column;
-	grid-template-columns: 25% 1fr auto;
+	grid-template-columns: 40% 1fr auto;
 	grid-template-rows: auto auto 1fr;
 	grid-gap: 24px;
 	margin: 40px 0;
@@ -3931,7 +3936,7 @@ input:checked + .order-pay {
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 		justify-content: space-between;
 		padding: 20px;
-		z-index: 999;
+		z-index: 99999;
 	}
 	.menu-mob {
 		display: block;
@@ -4090,11 +4095,12 @@ input:checked + .order-pay {
 		margin-top: 20px;
 	}
 	.header-center {
-		position: relative;
+		z-index: 10000;
+		background-color: #ffffff;
 	}
 	.header__burger {
 		position: absolute;
-		top: 32px;
+		top: 28px;
 		right: 20px;
 		width: 36px;
 		height: 36px;
@@ -4607,7 +4613,7 @@ input:checked + .order-pay {
 		font-size: 16px;
 	}
 	.header-center {
-		position: relative;
+		position: fixed;
 	}
 	.footer {
 		font-size: 14px;
@@ -5004,5 +5010,69 @@ input:checked + .order-pay {
 	}
 	.preim {
 		margin: 0 0 60px;
+	}
+}
+
+.footer__download {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	align-self: flex-end;
+	margin-bottom: 24px;
+}
+
+.footer__download_title {
+	font-family: 'Manrope-Regular';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 0em;
+	color: #DADADA;
+}
+
+.footer__download_btns {
+	display: flex;
+	gap: 8px;
+	width: 592px;
+}
+
+.footer__download_btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 2px 16px 2px 16px;
+	text-decoration: none;
+	background-color: #272727;
+	border-radius: 4px;
+	width: 100%;
+}
+
+.footer__download_btn h1 {
+	font-family: 'Manrope-Regular';
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #DADADA;
+	text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+	.footer__download {
+		align-self: auto;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 576px) {
+	.footer__download {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.footer__download_btns {
+		width: 100%;
 	}
 }

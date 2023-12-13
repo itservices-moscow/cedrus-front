@@ -682,14 +682,15 @@
     display: none;
   }
   .user-nav.active {
-    position: absolute;
+    position: fixed;
     display: block;
     width: 100vw;
-    top: 90px;
+    top: 0px;
     left: 0;
-    bottom: 97px;
     z-index: 1000;
     height: 100%;
+    padding-top: 160px;
+    overflow: scroll;
   }
   .user-popup .btn-form {
     margin-top: auto;

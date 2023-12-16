@@ -3936,7 +3936,7 @@ input:checked + .order-pay {
 		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 		justify-content: space-between;
 		padding: 20px;
-		z-index: 99999;
+		z-index: 1000;
 	}
 	.menu-mob {
 		display: block;
@@ -3949,7 +3949,7 @@ input:checked + .order-pay {
 		background: #FFFFFF;
 		padding: 0 0 20px;
 		transition: transform .3s;
-		z-index: 1000;
+		z-index: 10000;
 	}
 	.menu-mob__top {
 		display: flex;

@@ -3715,6 +3715,9 @@ td {
 	border-radius: 4px;
 	margin-left: 8px;
 }
+.cart__item .product-atribyte__color {
+	margin-bottom: 0;
+}
 .cart__items .cart__item {
 	border-bottom: 1px solid #DADADA;
 	margin: 0;
@@ -4773,9 +4776,9 @@ input:checked + .order-pay {
 	.product-slider .carousel-indicators {
 		margin-top: 16px;
 	}
-	.product-atribyte__list {
+	/* .product-atribyte__list {
 		display: none;
-	}
+	} */
 	.card-tabs {
 		margin-top: 60px;
 	}
@@ -4845,8 +4848,14 @@ input:checked + .order-pay {
 		gap: 8px;
 	}
 	.categories__item {
-		height: 51px;
+		height: 50px;
 		margin: 0;
+	}
+	.categories__item > div {
+		display: flex;
+		align-items: center;
+		height: 50px;
+		padding-top: 0;
 	}
 	.categories__item .categories__item-tag {
 		display: none;
@@ -4970,6 +4979,9 @@ input:checked + .order-pay {
 	.cart__item-color {
 		grid-column-end: -3;
 	}
+	.cart__item .product-atribyte__color {
+		grid-column: span 3;
+	}
 	.cart__item-color__box {
 		width: 16px;
 		height: 16px;
@@ -5079,4 +5091,46 @@ input:checked + .order-pay {
 
 .header-center.special-fixed {
 	position: fixed;
+}
+
+.ya-share2__container_size_m .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more.ya-share2__link_more-button-type_short {
+	width: 100% !important;
+	height: 28px !important;
+	padding: 0 !important;
+	background: none !important;
+	border-radius: 0 !important;
+}
+
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__badge_more {
+	padding: 0 !important;
+	border-radius: 0 !important;
+}
+
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more {
+	position: relative;
+	display: flex;
+    align-items: center;
+	width: 100% !important;
+	height: 28px !important;
+	padding-left: 30px;
+	background: url(../img/soc.svg) center left/28px no-repeat !important;
+}
+
+.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more::after {
+	content: 'Поделиться';
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #0C674B;
+    text-decoration: none;
+}
+
+@media (max-width: 580px) {
+	.ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__icon_more::after {
+		display: none;
+	}
 }

@@ -5134,3 +5134,32 @@ input:checked + .order-pay {
 		display: none;
 	}
 }
+
+@media (max-width: 360px) {
+	.header-phone {
+		right: 55px;
+	}
+
+	.menu-mob__item.phone a,
+	.menu-mob__item.phone p,
+	.menu-mob__link,
+	.menu-mob__city a {
+		font-size: 14px;
+	}
+
+	.mob-tapbar {
+		padding: 10px;
+	}
+
+	.menu-mob__bottom .mob-bottom__btn a {
+		font-size: 12px;
+	}
+
+	.swiper_nav .swiper-button-prev {
+		left: 100px;
+	}
+
+	.swiper_nav .swiper-button-next {
+		right: 100px;
+	}
+}
